@@ -1,0 +1,57 @@
+Start tracing...
+
+comm=MPI_COMM_WORLD func=MPI_Comm_size size=size tm1=0.064595864 tm2=0.000000656 
+comm=MPI_COMM_WORLD func=MPI_Comm_rank rank=rank tm1=0.000001373 tm2=0.000000392 
+buf=buf comm=MPI_COMM_WORLD count=1024 datatype=MPI_CHAR dest=0 func=MPI_Send tag=0 tm1=0.000058905 tm2=0.000175084 
+buffer=buffer comm=MPI_COMM_WORLD count=1 datatype=MPI_INT func=MPI_Bcast root=0 tm1=0.000015660 tm2=0.000647369 
+comm=MPI_COMM_WORLD func=MPI_Comm_size size=size tm1=0.000978010 tm2=0.000000474 
+buffer=buffer comm=MPI_COMM_WORLD count=4 datatype=MPI_BYTE func=MPI_Bcast root=0 tm1=0.000006156 tm2=0.000165386 
+comm=MPI_COMM_WORLD func=MPI_Barrier tm1=0.000073108 tm2=0.000039810 
+comm=MPI_COMM_WORLD count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6452192 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000005850 tm2=0.000015143 
+comm=MPI_COMM_WORLD count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6455296 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000436 tm2=0.000002076 
+buffer=buffer comm=MPI_COMM_WORLD count=1 datatype=MPI_DOUBLE func=MPI_Bcast root=0 tm1=0.000000443 tm2=0.000207925 
+buffer=buffer comm=MPI_COMM_WORLD count=1 datatype=MPI_INT func=MPI_Bcast root=0 tm1=0.000001401 tm2=0.000008240 
+buf=buf comm= count=1024 datatype=MPI_CHAR dest=0 func=MPI_Send tag=0 tm1=0.000473747 tm2=0.000001678 
+buffer=buffer comm= count=1 datatype=MPI_INT func=MPI_Bcast root=0 tm1=0.000000580 tm2=0.000303278 
+buffer=buffer comm= count=1 datatype=MPI_UNSIGNED_INT func=MPI_Bcast root=0 tm1=0.000008395 tm2=0.000042656 
+comm= func=MPI_Barrier tm1=0.000061258 tm2=0.000021066 
+amode=41 comm=MPI_COMM_SELF fh=40669888 filename=/home/wzzhang/project-cse/zhangyou/tmp/ior.dat.00000007 func=MPI_File_open info=40661568 tm1=0.000141277 tm2=0.001503192 
+buf=buf count=131072 datatype=MPI_BYTE fh=40669888 func=MPI_File_write_at offset=134086656 original_offset=0 repetition=1024 status=140736798165056 tm1=0.000000639 tm1_first=0.000284018 tm2=0.000038482 
+fh=40669888 func=MPI_File_close tm1=0.000093091 tm2=0.000148775 
+comm= func=MPI_Barrier tm1=0.000002011 tm2=0.010524241 
+amode=2 comm= fh=40660672 filename=/home/wzzhang/project-cse/zhangyou/tmp/ior.dat.00000007 func=MPI_File_open info=6460480 tm1=0.000021088 tm2=0.000361609 
+fh=40660672 func=MPI_File_close tm1=0.000079890 tm2=0.000050338 
+comm= count=1 datatype=MPI_LONG_LONG func=MPI_Allreduce op=6449056 recvbuf=recvbuf repetition=2 sendbuf=sendbuf tm1=0.000000000 tm1_first=0.000006568 tm2=0.000088231 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6452192 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000005330 tm2=0.000003632 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6455296 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000533 tm2=0.000002193 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6452192 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000409 tm2=0.000001793 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6455296 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000415 tm2=0.000001750 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6452192 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000536 tm2=0.000001963 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6455296 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000790 tm2=0.000001790 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6452192 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000437 tm2=0.000001676 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6455296 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000508 tm2=0.000001747 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6452192 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000548 tm2=0.000001589 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6455296 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000455 tm2=0.000001651 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6452192 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000512 tm2=0.000001899 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6455296 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000485 tm2=0.000001718 
+comm= func=MPI_Barrier tm1=0.000006362 tm2=0.000117334 
+amode=41 comm=MPI_COMM_SELF fh=40609312 filename=/home/wzzhang/project-cse/zhangyou/tmp/ior.dat.00000007 func=MPI_File_open info=40659296 tm1=0.000005515 tm2=0.000241899 
+buf=buf count=131072 datatype=MPI_BYTE fh=40609312 func=MPI_File_read_at offset=134086656 original_offset=0 repetition=1024 status=140736798165056 tm1=0.000000567 tm1_first=0.000296249 tm2=0.000038487 
+fh=40609312 func=MPI_File_close tm1=0.000036872 tm2=0.000028208 
+amode=2 comm= fh=40609312 filename=/home/wzzhang/project-cse/zhangyou/tmp/ior.dat.00000007 func=MPI_File_open info=6460480 tm1=0.000001358 tm2=0.000282404 
+fh=40609312 func=MPI_File_close tm1=0.000008076 tm2=0.000024703 
+comm= count=1 datatype=MPI_LONG_LONG func=MPI_Allreduce op=6449056 recvbuf=recvbuf repetition=2 sendbuf=sendbuf tm1=0.000000000 tm1_first=0.000000536 tm2=0.000010720 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6452192 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000001022 tm2=0.000003750 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6455296 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000493 tm2=0.000001970 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6452192 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000495 tm2=0.000001983 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6455296 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000513 tm2=0.000001932 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6452192 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000483 tm2=0.000001756 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6455296 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000411 tm2=0.000001656 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6452192 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000405 tm2=0.000001659 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6455296 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000553 tm2=0.000001778 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6452192 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000430 tm2=0.000001639 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6455296 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000422 tm2=0.000001785 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6452192 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000407 tm2=0.000001908 
+comm= count=1 datatype=MPI_DOUBLE func=MPI_Reduce op=6455296 recvbuf=recvbuf root=0 sendbuf=sendbuf tm1=0.000000490 tm2=0.000001603 
+comm= func=MPI_Barrier repetition=2 tm1=0.000000000 tm1_first=0.000001101 tm2=0.000047988 
+comm=MPI_COMM_WORLD func=MPI_Barrier tm1=0.000082846 tm2=0.000010803 

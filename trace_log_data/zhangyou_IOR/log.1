@@ -1,0 +1,15 @@
+Start tracing...
+
+comm=MPI_COMM_WORLD func=MPI_Comm_size size=*size tm1=1393590694 tm2=1393590694 
+comm=MPI_COMM_WORLD func=MPI_Comm_rank rank=*rank tm1=1393590694 tm2=1393590694 
+comm=MPI_COMM_WORLD func=MPI_Comm_size size=*size tm1=1393590694 tm2=1393590694 
+amode=41 comm=MPI_COMM_SELF fh=23390720 filename=test_data/ior.dat.00000001 func=MPI_File_open info=23364272 tm1=1393590694 tm2=1393590694 
+buf=*buf count=131072 datatype=MPI_BYTE fh=23431712 func=MPI_File_write_at offset=134086656 original_offset=0 repetition=1024 status=-1598267024 tm1=1393590694 tm2=1393590706 
+fh=23390720 func=MPI_File_close tm1=1393590706 tm2=1393590706 
+amode=2 comm= fh=-1598266784 filename=test_data/ior.dat.00000001 func=MPI_File_open info=4404128 tm1=1393590710 tm2=1393590710 
+fh=-1598266784 func=MPI_File_close tm1=1393590710 tm2=1393590710 
+amode=41 comm=MPI_COMM_SELF fh=23444368 filename=test_data/ior.dat.00000001 func=MPI_File_open info=23444240 tm1=1393590711 tm2=1393590711 
+buf=*buf count=131072 datatype=MPI_BYTE fh=23431712 func=MPI_File_read_at offset=134086656 original_offset=0 repetition=1024 status=-1598267024 tm1=1393590711 tm2=1393590726 
+fh=23444368 func=MPI_File_close tm1=1393590726 tm2=1393590726 
+amode=2 comm= fh=-1598266784 filename=test_data/ior.dat.00000001 func=MPI_File_open info=4404128 tm1=1393590726 tm2=1393590727 
+fh=-1598266784 func=MPI_File_close tm1=1393590727 tm2=1393590727 

@@ -1,0 +1,31 @@
+tm1=0.000002044 tm2=0.000000563 func=MPI_Comm_size comm=MPI_COMM_WORLD size=size 
+tm1=0.000001419 tm2=0.000000232 func=MPI_Comm_rank comm=MPI_COMM_WORLD rank=rank 
+tm1=0.000004686 tm2=0.000000146 func=MPI_Comm_rank comm=MPI_COMM_WORLD rank=rank 
+tm1=0.000050708 tm2=0.002350966 func=MPI_Bcast buffer=buffer count=13 datatype=MPI_INT root=0 comm=MPI_COMM_WORLD 
+tm1=0.000004355 tm2=0.000006990 func=MPI_Bcast buffer=buffer count=5 datatype=MPI_CHAR root=0 comm=MPI_COMM_WORLD 
+tm1=0.030022789 tm2=0.000042960 func=MPI_Type_contiguous count=4096 oldtype=MPI_BYTE newtype=30046144 
+tm1=0.000025238 tm2=0.000002855 func=MPI_Type_commit datatype=30046144 
+tm1=0.000013512 tm2=0.000014230 func=MPI_Type_create_subarray ndims=2 array_of_sizes=2-480-484- array_of_subsizes=2-120-124- array_of_starts=2-0-4- order=0 oldtype=30046144 newtype=30046656 
+tm1=0.000000225 tm2=0.000000960 func=MPI_Type_commit datatype=30046656 
+tm1=0.000040669 tm2=0.025029009 func=MPI_Barrier comm= 
+tm1=0.000831676 tm2=0.012205065 func=MPI_File_open comm=MPI_COMM_SELF filename=tile amode=2 info=30047648 fh=30068672 
+tm1=0.000110375 tm2=0.002489900 func=MPI_File_set_view fh=30068672 disp=0 etype=30046144 filetype=30046656 datarep=native info=6316032 
+tm1=0.000000369 tm2=0.000256611 func=MPI_Barrier comm= 
+tm1=0.000002007 tm2=0.685053590 func=MPI_File_read fh=30068672 buf=buf count=14400 datatype=30046144 status=140734385829664 
+tm1=0.000002445 tm2=0.090460910 func=MPI_Barrier comm= 
+tm1=0.000004618 tm2=0.001240294 func=MPI_File_close fh=30068672 
+tm1=0.000001331 tm2=0.000000495 func=MPI_Comm_size comm= size=size 
+tm1=0.000166247 tm2=0.026026967 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6311424 comm= 
+tm1=0.000000282 tm2=0.000020837 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6313472 comm= 
+tm1=0.000000187 tm2=0.000014718 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6317824 comm= 
+tm1=0.000000214 tm2=0.000011826 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6317824 comm= 
+tm1=0.000000369 tm2=0.000000192 func=MPI_Comm_size comm= size=size 
+tm1=0.000000198 tm2=0.000050954 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6311424 comm= 
+tm1=0.000000190 tm2=0.000040944 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6313472 comm= 
+tm1=0.000000182 tm2=0.000009221 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6317824 comm= 
+tm1=0.000000187 tm2=0.000008105 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6317824 comm= 
+tm1=0.000000267 tm2=0.000000173 func=MPI_Comm_size comm= size=size 
+tm1=0.000000193 tm2=0.000019115 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6311424 comm= 
+tm1=0.000000197 tm2=0.000010262 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6313472 comm= 
+tm1=0.000000185 tm2=0.000008995 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6317824 comm= 
+tm1=0.000000210 tm2=0.000007758 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6317824 comm= 

@@ -1,0 +1,9 @@
+
+all: trace_tree
+
+trace_tree: suffix_tree_edit.cpp test_suffix_tree_diff.cpp datatype.cpp
+	g++ suffix_tree_edit.cpp test_suffix_tree_diff.cpp datatype.cpp -std=c++0x -O2 -o trace_tree -lrt
+#This works! Why??
+#g++ suffix_tree_trace.o test_preprocess_trace.o -o xx
+#g++ suffix_tree_trace.cpp datatype.cpp test_preprocess_trace.cpp -o suffix_trace
+#g++ suffix_tree_edit.cpp repetition_in_tree.cpp datatype.cpp -std=c++0x -g -o compress
