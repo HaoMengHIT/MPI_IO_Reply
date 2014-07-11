@@ -39,59 +39,9 @@ public:
 	void output_compressed_log(ostream& os);
 
 	// return the length of the longest prefix of sub which can be matched in suffix tree
-	template <class Iterator>
-	Iterator inc_search(Iterator sub, int *final_pos)
-	{
-	//	typedef typename Iterator::value_type T;	// extract real type
+   iterator inc_search(iterator sub, int *final_pos);
 
-		Iterator result = sub;
-		Node* node = &root;
-		Edge* edge = NULL;
-		int pos = 0;	// the iter's pos at edge
-		int edge_len = -1;
-		bool flag = true;
-		*final_pos = -1;
-
-
-		while (flag) {
-			if (edge == NULL) {
-				edge = node->find_edge(*result);	
-				if (edge == NULL) {
-					flag = false;
-				}
-				else {
-					result++;
-					pos = 1; // the second element of the edge
-					edge_len = edge->length();
-				}
-			}
-			else {
-				if (pos >= edge_len) {
-					node = edge->endpoint;
-					*final_pos = edge->end;
-					edge = NULL;
-					edge_len = 0;
-					pos = 0;
-
-					if (node == NULL || node->isleaf())
-						flag = false;
-				}
-				else {
-					if (*result == (*edge)[pos]) {
-						result++;
-						pos++;
-					}
-					else {
-						flag = false;
-						*final_pos = edge->end - edge->length() + pos;	
-					}
-				}
-			}
-		}
-		
-		return result;
-	}
-
+	
 	void bfs_find_repetition(void);
 	int print_tree(void);
 private:
@@ -105,7 +55,8 @@ private:
 	int label_non_primitive(int leaf, Node* node);
 	int left_rotation(int begin_pos, int length);
 
-	struct Edge{
+	struct Edge
+   {
 		// the begin and end pos of this edge, note that INT_MAX stands for #(the changing end pos of this entire string)
 		unsigned int begin, end;
 		// Is there a better way to find test_str?
@@ -168,7 +119,8 @@ private:
 		bool is_none(void) { return begin == 0 && end == 0; }
 	};
 
-	struct Node{
+	struct Node
+   {
 		typedef struct Edge Edge; // the entry accessable type for Node
 
 		int depth;
@@ -192,7 +144,8 @@ private:
 
 		bool in_range(int i) { return i>=dfs_num_begin && i<=dfs_num_end; }
 
-		void add_edge(Edge* edge) { 
+		void add_edge(Edge* edge) 
+      { 
 			if (edge->endpoint == NULL)
 				edge->endpoint = new Node(test_node_str, edge);
 			make_pair(edge, true);
@@ -201,7 +154,8 @@ private:
 			//cout << "edge added. Now we have " << edges.size() << "edges." << endl;
 		}
 
-		void del_edge(Edge* edge) {
+		void del_edge(Edge* edge) 
+      {
 			map<Edge*, bool>::iterator iter = edges.find(edge);
 
 			if (iter == edges.end())
@@ -223,11 +177,13 @@ private:
 			map<str_hmap, Edge*>::iterator iter = findedges.find(c);
 			//cout << " founded? ";
 
-			if (iter != findedges.end()) {
+			if (iter != findedges.end()) 
+         {
 				//cout << "yes." << endl;
 				return iter->second;
 			}
-			else {
+			else 
+         {
 				//cout << "no." << endl;
 				return NULL;
 			}
@@ -257,7 +213,8 @@ private:
 
 	};
 
-	class ActivePoint{
+	class ActivePoint
+   {
 	public:
 		Node* active_node;
 		int active_length;
@@ -312,7 +269,8 @@ private:
 		unsigned int length = get_active_length();
 		
 		// update
-		if (length >= edge_size) {
+		if (length >= edge_size) 
+      {
 			set_active_node(edge->endpoint);
 			set_active_length(length-edge_size);
 			active_e += edge_size;
@@ -338,7 +296,8 @@ private:
 			prev = curr;
 			curr = node;
 			
-			if (first == false) {
+			if (first == false) 
+         {
 				prev->suffix_link = curr;
 				//cout << "Suffix link added from prev " << prev << " to curr " << curr << endl;
 			}

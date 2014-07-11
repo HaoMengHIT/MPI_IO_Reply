@@ -110,6 +110,66 @@ int SuffixTree::construct(void)
 	return 0;
 }
 
+iterator SuffixTree::inc_search(iterator sub, int *final_pos)
+{
+//	typedef typename Iterator::value_type T;	// extract real type
+
+   iterator result = sub;
+   Node* node = &root;
+   Edge* edge = NULL;
+   int pos = 0;	// the iter's pos at edge
+   int edge_len = -1;
+   bool flag = true;
+   *final_pos = -1;
+
+
+   while (flag) 
+   {
+      if (edge == NULL) 
+      {
+         edge = node->find_edge(*result);	
+         if (edge == NULL) 
+         {
+            flag = false;
+         }
+         else 
+         {
+            result++;
+            pos = 1; // the second element of the edge
+            edge_len = edge->length();
+         }
+      }
+      else 
+      {
+         if (pos >= edge_len)
+         {
+            node = edge->endpoint;
+            *final_pos = edge->end;
+            edge = NULL;
+            edge_len = 0;
+            pos = 0;
+
+            if (node == NULL || node->isleaf())
+               flag = false;
+         }
+         else 
+         {
+            if (*result == (*edge)[pos])
+            {
+               result++;
+               pos++;
+            }
+            else 
+            {
+               flag = false;
+               *final_pos = edge->end - edge->length() + pos;	
+            }
+         }
+      }
+   }
+   
+   return result;
+}
 
 void SuffixTree::dfs(void)
 {
