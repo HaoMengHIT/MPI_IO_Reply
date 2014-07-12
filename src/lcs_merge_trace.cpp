@@ -192,7 +192,7 @@ int lcs_merge_two(str_hmap_list& la, string rdir, string wdir, int procs, int i,
 {
     // Note: the first element in la and lb must be NULL(or sth like it), because the algorithm will ignore the first element
    struct timespec pp_b = recorder_wtime();
-   Preprocess<str_hmap_list, str_hmap> ppb(rdir+"compressed_log."+std::to_string(i), procs, i);
+   Preprocess ppb(rdir+"compressed_log."+std::to_string(i), procs, i);
    ppb.run();	
    //ppb.data_print();
    str_hmap_list& lb = ppb.get_data();
@@ -248,7 +248,7 @@ int main(int argc, char* argv[])
 
 	struct timespec begin = recorder_wtime();
 	struct timespec pp_b = recorder_wtime();
-	Preprocess<str_hmap_list, str_hmap> ppa(rdir_str+"compressed_log.0", logs, 0);
+	Preprocess ppa(rdir_str+"compressed_log.0", logs, 0);
 	ppa.run();	
     //ppa.data_print();
     str_hmap_list& la = ppa.get_data();

@@ -16,7 +16,7 @@ struct timespec merge_time;
 int find_match(str_hmap_list& base, string prefix, int procs, int rank)
 {
 	struct timespec pp_time2_b = recorder_wtime();
-	Preprocess<str_hmap_list, str_hmap> pp_right(prefix + string("log.") + to_string(rank), procs, rank, true);
+	Preprocess pp_right(prefix + string("log.") + to_string(rank), procs, rank, true);
 	pp_right.run();
 	str_hmap_list& right = pp_right.get_data();
 	struct timespec pp_time2_e = recorder_wtime();
@@ -84,7 +84,7 @@ int main()
 	struct timespec begin_all = recorder_wtime();
 
 	struct timespec pp_time1_b = recorder_wtime();
-	Preprocess<str_hmap_list, str_hmap> pp_base(prefix + "log.0", 256, 0, true);
+	Preprocess pp_base(prefix + "log.0", 256, 0, true);
 	pp_base.run();
 	str_hmap_list& base = pp_base.get_data();
 	struct timespec pp_time1_e = recorder_wtime();

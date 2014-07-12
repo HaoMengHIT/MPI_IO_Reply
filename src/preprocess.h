@@ -67,8 +67,8 @@ public:
 	// TODO: why the adding of const will cause error?
 	int data_print(ostream & out = cerr);
 	int data_print_pure(ostream & out = cerr);
-	T & get_data(void);
-	T & get_auxiliary(void) { return auxiliary_data; }
+	str_hmap_list & get_data(void);
+	str_hmap_list & get_auxiliary(void) { return auxiliary_data; }
 };
 
 // Important! The implementation and definition of TEMPLATE CLASS MUST put in the same FILE!!!

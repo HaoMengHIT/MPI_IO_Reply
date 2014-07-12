@@ -22,14 +22,14 @@ Preprocess::Preprocess(string filename_para, int procs_para, int rank_para, bool
 	std::cerr << "File " << filename << std::endl;
 }
 
-template <typename T, typename K>
+//template <typename T, typename K>
 void Preprocess::changefile(string filename_para)
 {
 	filename = filename_para;
 }
 
 // TODO: should have an output parameter here
-template <typename T, typename K>
+//template <typename T, typename K>
 int Preprocess::run()
 {
 	fstream fin(filename.c_str());
@@ -41,7 +41,7 @@ int Preprocess::run()
 	int lineno = 0;
 
 	std::cerr << "Running" << std::endl;
-	K empty;
+	str_hmap empty;
 	all_data.push_back(empty);
 	auxiliary_data.push_back(empty);
 	//auxiliary_data.push_back(empty);
@@ -58,7 +58,7 @@ int Preprocess::run()
 	return 0;
 }
 
-template<typename T, typename K>
+//template<typename T, typename K>
 unsigned int Preprocess::build_match(string& key, string& value, bool free)
 {
 	typename map<string,map<string, unsigned int> >::iterator outer_it;
@@ -90,7 +90,7 @@ unsigned int Preprocess::build_match(string& key, string& value, bool free)
 	return result;
 }
 
-template<typename T, typename K>
+//template<typename T, typename K>
 int Preprocess::reorder(string func, string key, int temp_value, int pos, int* result)
 {
 	/*
@@ -116,7 +116,7 @@ int Preprocess::reorder(string func, string key, int temp_value, int pos, int* r
 		return 0;
 }
 
-template<typename T, typename K>
+//template<typename T, typename K>
 bool Preprocess::check_io(string& func_name, string& offset) 
 {
 	unsigned long off = stoul(offset);
@@ -137,12 +137,12 @@ bool Preprocess::check_io(string& func_name, string& offset)
 }
 
 // analyze each line, note this funtion is data-specific
-template<typename T, typename K>
+//template<typename T, typename K>
 int Preprocess::extract_data_from_single_line(std::string & line, int pos)
 {
 	std::string key, value, temp;
-	K cur_func;
-	K auxiliary;
+	str_hmap cur_func;
+	str_hmap auxiliary;
 
 	if (line == "Start tracing..." || line == "Outputing all data...")
 		return 0;
@@ -285,14 +285,14 @@ int Preprocess::extract_data_from_single_line(std::string & line, int pos)
 }
 
 
-template<typename T, typename K>
-T & Preprocess::get_data(void)
+//template<typename T, typename K>
+str_hmap_list & Preprocess::get_data(void)
 {
 	return all_data;
 }
 
 // for test
-template<typename T, typename K>
+//template<typename T, typename K>
 int Preprocess::data_print(ostream & out)
 {
 	out << "Outputing all data..." << std::endl;
@@ -301,9 +301,9 @@ int Preprocess::data_print(ostream & out)
 		return 1;
 	}
 
-	typename T::iterator titor, titor2;
+	typename str_hmap_list::iterator titor, titor2;
 	for(titor=all_data.begin(), titor2=auxiliary_data.begin(); titor!=all_data.end(); ++titor, ++titor2) {
-		typename K::iterator kitor;
+		typename str_hmap::iterator kitor;
 		for (kitor=titor->begin(); kitor!=titor->end(); ++kitor){
 			out << kitor->first << "=" << kitor->second << ' ';
 		}
@@ -316,7 +316,7 @@ int Preprocess::data_print(ostream & out)
 	return 0;
 }
 
-template<typename T, typename K>
+//template<typename T, typename K>
 int Preprocess::data_print_pure(ostream & out)
 {
 	out << "Outputing all data..." << std::endl;
@@ -325,9 +325,9 @@ int Preprocess::data_print_pure(ostream & out)
 		return 1;
 	}
 
-	typename T::iterator titor, titor2;
+	typename str_hmap_list::iterator titor, titor2;
 	for(titor=all_data.begin(), titor2=auxiliary_data.begin(); titor!=all_data.end(); ++titor, ++titor2) {
-		typename K::iterator kitor;
+		typename str_hmap::iterator kitor;
 		for (kitor=titor->begin(); kitor!=titor->end(); ++kitor){
 			out << kitor->first << "=" << kitor->second << ' ';
 		}

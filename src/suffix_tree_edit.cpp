@@ -110,11 +110,11 @@ int SuffixTree::construct(void)
 	return 0;
 }
 
-iterator SuffixTree::inc_search(iterator sub, int *final_pos)
+str_hmap_list::iterator SuffixTree::inc_search(str_hmap_list::iterator sub, int *final_pos)
 {
 //	typedef typename Iterator::value_type T;	// extract real type
 
-   iterator result = sub;
+   str_hmap_list::iterator result = sub;
    Node* node = &root;
    Edge* edge = NULL;
    int pos = 0;	// the iter's pos at edge

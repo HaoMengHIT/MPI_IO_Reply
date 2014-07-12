@@ -39,7 +39,7 @@ public:
 	void output_compressed_log(ostream& os);
 
 	// return the length of the longest prefix of sub which can be matched in suffix tree
-   iterator inc_search(iterator sub, int *final_pos);
+   str_hmap_list::iterator inc_search(str_hmap_list::iterator sub, int *final_pos);
 
 	
 	void bfs_find_repetition(void);

@@ -148,7 +148,7 @@ int gen_code_body(ostream& fout, string file_prefix, map<string, vector<string>>
 	cerr << "gen - " << filename << endl;
 
 	ifstream fin(filename.c_str());
-	Preprocess<str_hmap_list, str_hmap> pp(filename, procs, rank);
+	Preprocess pp(filename, procs, rank);
 	pp.run();
 	str_hmap_list &l = pp.get_data();
     	str_hmap_list &aux = pp.get_auxiliary();
@@ -422,7 +422,7 @@ int main(int argc, char* argv[])
    }
 
 
-	Preprocess<str_hmap_list, str_hmap> ppa(rdir_str + "merged_lcs.0", logs, 0);
+	Preprocess ppa(rdir_str + "merged_lcs.0", logs, 0);
 	ppa.run();	
     //ppa.data_print();
    str_hmap_list& la = ppa.get_data();
