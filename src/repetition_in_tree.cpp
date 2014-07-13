@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
 	ofstream fout(argv[2]);
 
 	struct timespec b = recorder_wtime();
-	Preprocess<str_hmap_list, str_hmap> pp(filename, 4, 0, true);
+	Preprocess pp(filename, 4, 0, true);
 	pp.run();
 	struct timespec e = recorder_wtime();
 	preprocess_time += e - b;

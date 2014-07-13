@@ -13,13 +13,13 @@ int main(int argc, char* argv[])
 
 	string filename(argv[1] + string("log.0"));
 	string filename2(argv[1] + string("log.1"));
-	Preprocess<str_hmap_list, str_hmap> ppi(filename, 4, 0, true);
+	Preprocess ppi(filename, 4, 0, true);
 	ppi.run();
 
 	ofstream fout("reorder_out.0");
 	ppi.data_print_pure(fout);
 
-	Preprocess<str_hmap_list, str_hmap> ppi2(filename2, 4, 1, true);
+	Preprocess ppi2(filename2, 4, 1, true);
 	ppi2.run();
 
 	ofstream fout2("reorder_out.1");
