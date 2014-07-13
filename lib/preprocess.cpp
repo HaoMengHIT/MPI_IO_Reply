@@ -117,17 +117,17 @@ int Preprocess::extract_data_from_single_line(std::string & line, int pos)
 		return 0;
 
 	// extract function's name, parameters, etc
-	for(int cur_para_begin = 0,
-			cur_para_end = line.find(' ', cur_para_begin); 
+   for(int cur_para_begin = 0,
+         cur_para_end = line.find(' ', cur_para_begin); 
 
-		cur_para_end >= 0; 
+         cur_para_end >= 0; 
+
+         cur_para_begin = cur_para_end+1,cur_para_end = line.find(' ', cur_para_begin)){
 		
-		cur_para_begin = cur_para_end+1,cur_para_end = line.find(' ', cur_para_begin)){
-		
-		while (line[cur_para_begin] == ' ')
-			cur_para_begin++;
-		temp.assign(line, cur_para_begin, cur_para_end-cur_para_begin);
-		size_t split_pos = temp.find('=');
+      while (line[cur_para_begin] == ' ')
+         cur_para_begin++;
+      temp.assign(line, cur_para_begin, cur_para_end-cur_para_begin);
+      size_t split_pos = temp.find('=');
 
 		if (split_pos >= 0) {
 			value.assign(temp, split_pos+1, std::string::npos);
