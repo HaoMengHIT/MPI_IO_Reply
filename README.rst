@@ -1,4 +1,4 @@
-MPI_IO_replay
+MPI_IO_Replay
 =============
 
 Replay MPI I/O operation according to the input trace file.
@@ -15,7 +15,8 @@ Build
 .. note::
    Important File
 
-   The ``Recorder_All/func_list`` defines the wrapper function to process
+   The ``Recorder_All/func_list`` defines the wrapper function to process. use
+   ``func-to-decl.sh < func_list > decl_list.def`` to update 
 
 Run
 ----
