@@ -5,7 +5,7 @@
 #include <fstream>
 #include <sstream>
 #include <string>
-#include <tr1/unordered_map>
+#include <unordered_map>
 #include <map>
 #include <list>
 #include <vector>
@@ -19,7 +19,6 @@ using namespace std;
 /*
  * Read raw trace file and convert.
  */
-//template <typename T, typename K>
 class Preprocess {
 private:
 	string filename;
@@ -34,7 +33,6 @@ private:
 	int extract_data_from_single_line(string & line, int pos);
 
 	unsigned int build_match(string& key, string& value, bool first);
-	int reorder(string func, string key, int temp_value, int pos, int* result);
 	bool check_io(string& func_name, string& offset);
 
 	bool first; // this state should be true if and only if it is reading the raw logs!
@@ -48,28 +46,39 @@ private:
 	unsigned long last_offset;
 	unsigned long offset_dis;
 
-	// return 0 if repetition found, 
-	// -1 if function name unmatch,
-	// 1 if offset unmatch,
-	// 2 if other paras unmatch
-//	int consecutive_op(K & cur_func);	No longer needed
-
-	// compress the obvious consecutive op on large file
-//	int push_with_simple_compress(K & cur_func);	No longer needed
 
 public:
-	Preprocess(string filename_para, int nprocs_para, int rank_para, bool first_para = false);
-//	~Preprocess();
+   /* read from file and build memory structure
+    * @param filename_para: the log's filename
+    * @param nprocs_para: there are totaly how many files
+    * @param rank_para: this file's id suffix (rank means the mpi program's
+    *    rank, Recorder would write rank id at end of file name, such as log.4.
+    *    so rank here is 4)
+    * @param raw: reading the uncompressed raw log data.
+    */
+	Preprocess(string filename_para, int nprocs_para, int rank_para, bool raw = false);
 
-	// return 0 if success
+   /* change the file before run */
 	void changefile(string file_name_para);
+
+   /* do real process and get data 
+    * @return 0 --> success
+    *         1 --> failed
+    */
 	int run();
-	// TODO: why the adding of const will cause error?
-	int data_print(ostream & out = cerr);
-	int data_print_pure(ostream & out = cerr);
-	str_hmap_list & get_data(void);
-	str_hmap_list & get_auxiliary(void) { return auxiliary_data; }
+
+	const str_hmap_list & get_data(void) const {
+      return all_data;
+   }
+	const str_hmap_list & get_auxiliary(void) const {
+      return auxiliary_data; 
+   }
 };
 
-// Important! The implementation and definition of TEMPLATE CLASS MUST put in the same FILE!!!
+
+/* print log data as well as aux data */
+int data_print(const str_hmap_list& log, const str_hmap_list& aux, ostream & out = cerr);
+/* print only log data */
+int data_print(const str_hmap_list& log, ostream & out = cerr);
+
 #endif // _PREPROCESS_H

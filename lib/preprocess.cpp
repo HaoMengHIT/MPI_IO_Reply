@@ -29,7 +29,6 @@ void Preprocess::changefile(string filename_para)
 }
 
 // TODO: should have an output parameter here
-//template <typename T, typename K>
 int Preprocess::run()
 {
 	fstream fin(filename.c_str());
@@ -44,15 +43,11 @@ int Preprocess::run()
 	str_hmap empty;
 	all_data.push_back(empty);
 	auxiliary_data.push_back(empty);
-	//auxiliary_data.push_back(empty);
 	
 	while (getline(fin,ReadLine))
 	{
 		lineno++;
-//		std::cerr << lineno << '\t' << ReadLine << std::endl;
-		Preprocess::extract_data_from_single_line(ReadLine, lineno);
-//		if (lineno > 100)
-//			break;
+		extract_data_from_single_line(ReadLine, lineno);
 	}
 
 	return 0;
@@ -91,32 +86,6 @@ unsigned int Preprocess::build_match(string& key, string& value, bool free)
 }
 
 //template<typename T, typename K>
-int Preprocess::reorder(string func, string key, int temp_value, int pos, int* result)
-{
-	/*
-	if (all_data[pos-state]["func"] != func)
-		return 0;
-
-	if (pos-state < barrier)
-		return 0;
-
-	string last_value = all_data[pos-state][key];
-	int value = std::stoi(last_value);
-
-	if (value > temp_value) {	// need reorder
-		all_data[pos-state][key] = std::to_string(temp_value);
-		*result = value;
-		int rec_result;
-		int ret = reorder(func, key, temp_value, pos-state, &rec_result);
-		if (ret)
-			all_data[pos-state][key] = std::to_string(rec_result);
-		return 1;
-	}
-	else*/
-		return 0;
-}
-
-//template<typename T, typename K>
 bool Preprocess::check_io(string& func_name, string& offset) 
 {
 	unsigned long off = stoul(offset);
@@ -148,17 +117,17 @@ int Preprocess::extract_data_from_single_line(std::string & line, int pos)
 		return 0;
 
 	// extract function's name, parameters, etc
-	for(int cur_para_begin = 0,
-			cur_para_end = line.find(' ', cur_para_begin); 
+   for(int cur_para_begin = 0,
+         cur_para_end = line.find(' ', cur_para_begin); 
 
-		cur_para_end >= 0; 
+         cur_para_end >= 0; 
+
+         cur_para_begin = cur_para_end+1,cur_para_end = line.find(' ', cur_para_begin)){
 		
-		cur_para_begin = cur_para_end+1,cur_para_end = line.find(' ', cur_para_begin)){
-		
-		while (line[cur_para_begin] == ' ')
-			cur_para_begin++;
-		temp.assign(line, cur_para_begin, cur_para_end-cur_para_begin);
-		size_t split_pos = temp.find('=');
+      while (line[cur_para_begin] == ' ')
+         cur_para_begin++;
+      temp.assign(line, cur_para_begin, cur_para_end-cur_para_begin);
+      size_t split_pos = temp.find('=');
 
 		if (split_pos >= 0) {
 			value.assign(temp, split_pos+1, std::string::npos);
@@ -285,52 +254,29 @@ int Preprocess::extract_data_from_single_line(std::string & line, int pos)
 }
 
 
-//template<typename T, typename K>
-str_hmap_list & Preprocess::get_data(void)
+int data_print(const str_hmap_list& log, const str_hmap_list& aux, ostream & out)
 {
-	return all_data;
-}
+   const str_hmap_list& all_data = log;
+   const str_hmap_list& auxiliary_data = aux;
+   bool has_aux = log.size() == aux.size();
 
-// for test
-//template<typename T, typename K>
-int Preprocess::data_print(ostream & out)
-{
 	out << "Outputing all data..." << std::endl;
 	if (all_data.empty()) {
 		out << "No data so far" << std::endl;
 		return 1;
 	}
 
-	typename str_hmap_list::iterator titor, titor2;
+	typename str_hmap_list::const_iterator titor, titor2;
 	for(titor=all_data.begin(), titor2=auxiliary_data.begin(); titor!=all_data.end(); ++titor, ++titor2) {
-		typename str_hmap::iterator kitor;
+		typename str_hmap::const_iterator kitor;
 		for (kitor=titor->begin(); kitor!=titor->end(); ++kitor){
 			out << kitor->first << "=" << kitor->second << ' ';
 		}
 
-		for (kitor=titor2->begin(); kitor!=titor2->end(); ++kitor)
-			out << kitor->first << "=" << kitor->second << ' ';
-		out << std::endl;
-	}
-
-	return 0;
-}
-
-//template<typename T, typename K>
-int Preprocess::data_print_pure(ostream & out)
-{
-	out << "Outputing all data..." << std::endl;
-	if (all_data.empty()) {
-		out << "No data so far" << std::endl;
-		return 1;
-	}
-
-	typename str_hmap_list::iterator titor, titor2;
-	for(titor=all_data.begin(), titor2=auxiliary_data.begin(); titor!=all_data.end(); ++titor, ++titor2) {
-		typename str_hmap::iterator kitor;
-		for (kitor=titor->begin(); kitor!=titor->end(); ++kitor){
-			out << kitor->first << "=" << kitor->second << ' ';
-		}
+      if(has_aux){
+         for (kitor=titor2->begin(); kitor!=titor2->end(); ++kitor)
+            out << kitor->first << "=" << kitor->second << ' ';
+      }
 
 		out << std::endl;
 	}
@@ -338,3 +284,8 @@ int Preprocess::data_print_pure(ostream & out)
 	return 0;
 }
 
+int data_print(const str_hmap_list& log, ostream & out)
+{
+   str_hmap_list empty;
+   return data_print(log, empty, out);
+}

@@ -1,7 +1,6 @@
 #ifndef _SUFFIX_TREE_
 #define _SUFFIX_TREE_
 #include <string>
-//#include <tr1/unordered_map>
 #include <limits>
 #include <map>
 #include <vector>
@@ -18,7 +17,7 @@ using std::cout;
 using std::endl;
 using std::out_of_range;
 using std::ostream;
-//typedef tr1::unordered_map map;
+using std::queue;
 
 // TODO: upgrade it to process trace. Rule: char-->elem  string-->elem_list
 class SuffixTree
