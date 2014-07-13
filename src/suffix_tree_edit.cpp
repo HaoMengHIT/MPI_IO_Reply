@@ -3,6 +3,8 @@
 #include <fstream>
 #include <queue>
 
+using namespace std;
+
 int SuffixTree::search(str_hmap_list& sub)
 {
 	Node* node = &root;

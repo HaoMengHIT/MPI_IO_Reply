@@ -195,8 +195,8 @@ int lcs_merge_two(str_hmap_list& la, string rdir, string wdir, int procs, int i,
    Preprocess ppb(rdir+"compressed_log."+std::to_string(i), procs, i);
    ppb.run();	
    //ppb.data_print();
-   str_hmap_list& lb = ppb.get_data();
-   str_hmap_list& b_aux = ppb.get_auxiliary();
+   str_hmap_list lb = ppb.get_data();
+   str_hmap_list b_aux = ppb.get_auxiliary();
    struct timespec pp_e = recorder_wtime();
    pp_time += pp_e - pp_b;
 
@@ -251,10 +251,10 @@ int main(int argc, char* argv[])
 	Preprocess ppa(rdir_str+"compressed_log.0", logs, 0);
 	ppa.run();	
     //ppa.data_print();
-    str_hmap_list& la = ppa.get_data();
-    str_hmap_list& a_aux = ppa.get_auxiliary();
-    	struct timespec pp_e = recorder_wtime();
-	pp_time += pp_e - pp_b;
+   str_hmap_list la = ppa.get_data();
+   str_hmap_list a_aux = ppa.get_auxiliary();
+   struct timespec pp_e = recorder_wtime();
+   pp_time += pp_e - pp_b;
 
 	for (int i=1; i<logs; i++) {
 		// merge log 0 and log i
@@ -263,7 +263,7 @@ int main(int argc, char* argv[])
 	
 	// copy log.0
 	ofstream out0(wdir_str + "merged_lcs.0");
-	ppa.data_print(out0);
+	data_print(la, a_aux, out0);
 
 	struct timespec end = recorder_wtime();
 	struct timespec cost = end - begin;

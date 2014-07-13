@@ -29,7 +29,6 @@ void Preprocess::changefile(string filename_para)
 }
 
 // TODO: should have an output parameter here
-//template <typename T, typename K>
 int Preprocess::run()
 {
 	fstream fin(filename.c_str());
@@ -285,52 +284,29 @@ int Preprocess::extract_data_from_single_line(std::string & line, int pos)
 }
 
 
-//template<typename T, typename K>
-str_hmap_list & Preprocess::get_data(void)
+int data_print(const str_hmap_list& log, const str_hmap_list& aux, ostream & out)
 {
-	return all_data;
-}
+   const str_hmap_list& all_data = log;
+   const str_hmap_list& auxiliary_data = aux;
+   bool has_aux = log.size() == aux.size();
 
-// for test
-//template<typename T, typename K>
-int Preprocess::data_print(ostream & out)
-{
 	out << "Outputing all data..." << std::endl;
 	if (all_data.empty()) {
 		out << "No data so far" << std::endl;
 		return 1;
 	}
 
-	typename str_hmap_list::iterator titor, titor2;
+	typename str_hmap_list::const_iterator titor, titor2;
 	for(titor=all_data.begin(), titor2=auxiliary_data.begin(); titor!=all_data.end(); ++titor, ++titor2) {
-		typename str_hmap::iterator kitor;
+		typename str_hmap::const_iterator kitor;
 		for (kitor=titor->begin(); kitor!=titor->end(); ++kitor){
 			out << kitor->first << "=" << kitor->second << ' ';
 		}
 
-		for (kitor=titor2->begin(); kitor!=titor2->end(); ++kitor)
-			out << kitor->first << "=" << kitor->second << ' ';
-		out << std::endl;
-	}
-
-	return 0;
-}
-
-//template<typename T, typename K>
-int Preprocess::data_print_pure(ostream & out)
-{
-	out << "Outputing all data..." << std::endl;
-	if (all_data.empty()) {
-		out << "No data so far" << std::endl;
-		return 1;
-	}
-
-	typename str_hmap_list::iterator titor, titor2;
-	for(titor=all_data.begin(), titor2=auxiliary_data.begin(); titor!=all_data.end(); ++titor, ++titor2) {
-		typename str_hmap::iterator kitor;
-		for (kitor=titor->begin(); kitor!=titor->end(); ++kitor){
-			out << kitor->first << "=" << kitor->second << ' ';
-		}
+      if(has_aux){
+         for (kitor=titor2->begin(); kitor!=titor2->end(); ++kitor)
+            out << kitor->first << "=" << kitor->second << ' ';
+      }
 
 		out << std::endl;
 	}
@@ -338,3 +314,8 @@ int Preprocess::data_print_pure(ostream & out)
 	return 0;
 }
 
+int data_print(const str_hmap_list& log, ostream & out)
+{
+   str_hmap_list empty;
+   return data_print(log, empty, out);
+}

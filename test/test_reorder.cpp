@@ -17,13 +17,13 @@ int main(int argc, char* argv[])
 	ppi.run();
 
 	ofstream fout("reorder_out.0");
-	ppi.data_print_pure(fout);
+	data_print(ppi.get_data(), fout);
 
 	Preprocess ppi2(filename2, 4, 1, true);
 	ppi2.run();
 
 	ofstream fout2("reorder_out.1");
-	ppi2.data_print_pure(fout2);
+	data_print(ppi.get_data(), fout2);
 
 
 	return 0;

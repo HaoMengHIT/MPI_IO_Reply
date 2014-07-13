@@ -150,8 +150,8 @@ int gen_code_body(ostream& fout, string file_prefix, map<string, vector<string>>
 	ifstream fin(filename.c_str());
 	Preprocess pp(filename, procs, rank);
 	pp.run();
-	str_hmap_list &l = pp.get_data();
-    	str_hmap_list &aux = pp.get_auxiliary();
+   str_hmap_list l = pp.get_data();
+   str_hmap_list aux = pp.get_auxiliary();
 
 	fout << "\tif (myrank_r == " << rank << ") {" << endl;
 
@@ -425,8 +425,8 @@ int main(int argc, char* argv[])
 	Preprocess ppa(rdir_str + "merged_lcs.0", logs, 0);
 	ppa.run();	
     //ppa.data_print();
-   str_hmap_list& la = ppa.get_data();
-	str_hmap_list& a_aux = ppa.get_auxiliary();
+   str_hmap_list la = ppa.get_data();
+	str_hmap_list a_aux = ppa.get_auxiliary();
 
 	// func name and parameters
 	map<string, vector<string>> func_info;

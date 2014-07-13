@@ -29,8 +29,8 @@ int main(int argc, char* argv[])
 	struct timespec e = recorder_wtime();
 	preprocess_time += e - b;
 
-	str_hmap_list& l = pp.get_data();
-	str_hmap_list& tm = pp.get_auxiliary();
+	str_hmap_list l = pp.get_data();
+	str_hmap_list tm = pp.get_auxiliary();
 //	pp.data_print(cout);
 
 	b = recorder_wtime();
