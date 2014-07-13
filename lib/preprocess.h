@@ -33,7 +33,6 @@ private:
 	int extract_data_from_single_line(string & line, int pos);
 
 	unsigned int build_match(string& key, string& value, bool first);
-	int reorder(string func, string key, int temp_value, int pos, int* result);
 	bool check_io(string& func_name, string& offset);
 
 	bool first; // this state should be true if and only if it is reading the raw logs!

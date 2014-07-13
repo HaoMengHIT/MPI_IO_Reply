@@ -43,15 +43,11 @@ int Preprocess::run()
 	str_hmap empty;
 	all_data.push_back(empty);
 	auxiliary_data.push_back(empty);
-	//auxiliary_data.push_back(empty);
 	
 	while (getline(fin,ReadLine))
 	{
 		lineno++;
-//		std::cerr << lineno << '\t' << ReadLine << std::endl;
-		Preprocess::extract_data_from_single_line(ReadLine, lineno);
-//		if (lineno > 100)
-//			break;
+		extract_data_from_single_line(ReadLine, lineno);
 	}
 
 	return 0;
@@ -87,32 +83,6 @@ unsigned int Preprocess::build_match(string& key, string& value, bool free)
 		outer_it->second.erase(inner_it);
 
 	return result;
-}
-
-//template<typename T, typename K>
-int Preprocess::reorder(string func, string key, int temp_value, int pos, int* result)
-{
-	/*
-	if (all_data[pos-state]["func"] != func)
-		return 0;
-
-	if (pos-state < barrier)
-		return 0;
-
-	string last_value = all_data[pos-state][key];
-	int value = std::stoi(last_value);
-
-	if (value > temp_value) {	// need reorder
-		all_data[pos-state][key] = std::to_string(temp_value);
-		*result = value;
-		int rec_result;
-		int ret = reorder(func, key, temp_value, pos-state, &rec_result);
-		if (ret)
-			all_data[pos-state][key] = std::to_string(rec_result);
-		return 1;
-	}
-	else*/
-		return 0;
 }
 
 //template<typename T, typename K>
