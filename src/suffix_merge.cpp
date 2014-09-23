@@ -99,7 +99,7 @@ int main(int argc, char* argv[])
 	
 	cout << "_____________________________________________________" << endl;
 
-//	st.print_tree();
+   //st.print_tree();
 
 	for (int i=1; i<log_num; i++)
 		find_match(st, prefix, log_num, i);
