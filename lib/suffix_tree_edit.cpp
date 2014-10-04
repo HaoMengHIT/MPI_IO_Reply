@@ -59,6 +59,7 @@ int SuffixTree::construct(void)
 	str_hmap end;
 	end.insert(make_pair("TheLastElement", "END"));
 	test_str.push_back(end);
+#ifndef  NDEBUG
    for(int i=0; i< test_str.size(); i++)
    {
       str_hmap::iterator it;
@@ -67,12 +68,10 @@ int SuffixTree::construct(void)
          cout << "i=" << i << " " << it->first << " " << it->second << endl;
       }
    }
-
+#endif
 	while (pos < test_str.size()) {
 		ls.clear();
 		remainder++;
-      printf("pos is %d\n",pos);
-		cout << "Char:  "  << test_str[pos] << endl;
 
 		while (remainder) {
 			int length = get_active_length();
@@ -86,7 +85,6 @@ int SuffixTree::construct(void)
 
          printf("remainder is %d\n",remainder);
 			if (a_edge == NULL) {
-            printf("i am in if\n");
 				Edge* newedge = new Edge(pos, numeric_limits<unsigned int>::max(), test_str);
 				node->add_edge(newedge);
 				ls.ins_link(node);
