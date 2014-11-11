@@ -5,6 +5,7 @@
 
 using namespace std;
 
+//This function is not used. I don't know why
 int SuffixTree::search(str_hmap_list& sub)
 {
 	Node* node = &root;
@@ -58,15 +59,23 @@ int SuffixTree::construct(void)
 	str_hmap end;
 	end.insert(make_pair("TheLastElement", "END"));
 	test_str.push_back(end);
-
-
+#ifndef  NDEBUG
+   for(int i=0; i< test_str.size(); i++)
+   {
+      str_hmap::iterator it;
+      for(it=test_str[i].begin();it!=test_str[i].end();it++)
+      {
+         cout << "i=" << i << " " << it->first << " " << it->second << endl;
+      }
+   }
+#endif
 	while (pos < test_str.size()) {
 		ls.clear();
 		remainder++;
-		//cout << "Char:  "  << test_str[pos] << endl;
 
 		while (remainder) {
 			int length = get_active_length();
+         printf("active_length is %d\n",length);
 			if (length == 0)
 				active_e = pos;
 
@@ -74,18 +83,23 @@ int SuffixTree::construct(void)
 			str_hmap a_char = get_active_edge();
 			Edge* a_edge = node->find_edge(a_char);
 
-
+         printf("remainder is %d\n",remainder);
 			if (a_edge == NULL) {
 				Edge* newedge = new Edge(pos, numeric_limits<unsigned int>::max(), test_str);
 				node->add_edge(newedge);
 				ls.ins_link(node);
 			}	
 			else {
+            printf("i am in else\n");
 				if (check_active_node())
+            {
+               printf("i am in else and i am before continue\n");
 					continue;
+            }
 
 				str_hmap expected_ele = (*a_edge)[get_active_length()];
 				if (expected_ele == get_ele(pos)) {
+               printf("i am in else and i am before break\n");
 					inc_active_len();
 					ls.ins_link(node);
 					break;
@@ -129,11 +143,15 @@ str_hmap_list::iterator SuffixTree::inc_search(str_hmap_list::iterator sub, int 
    {
       if (edge == NULL) 
       {
-         edge = node->find_edge(*result);	
-         if (edge == NULL) 
+         //first, check that whether the edge is begin with the result
+         //one edge contains one or more elements.
+         edge = node->find_edge(*result);
+         //do not find the result, and the current active node is root, so the while is ended, we just read next element which is after sub. 
+         if (edge == NULL)         
          {
             flag = false;
          }
+         //find the result, we move forward along the edge to compare next elemnet.
          else 
          {
             result++;
@@ -143,6 +161,8 @@ str_hmap_list::iterator SuffixTree::inc_search(str_hmap_list::iterator sub, int 
       }
       else 
       {
+         //we reach the end of the edge, if the next node is null or a leaf, we exit the loop because we find a max match,
+         //otherwise, we go on matching with the next edge.
          if (pos >= edge_len)
          {
             node = edge->endpoint;
@@ -455,7 +475,6 @@ void SuffixTree::bfs_find_repetition(void)
 	}*/
 
 }
-
 int SuffixTree::output_single_rep(int begin, int end, ostream& os, vector<map <int, int> >& rep_len, bool output = false)
 {
 	int compressed_length_rec = 0;
