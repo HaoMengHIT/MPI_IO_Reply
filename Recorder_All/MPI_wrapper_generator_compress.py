@@ -135,8 +135,15 @@ def generate_one_function(para_list, out_file, func_file):
 		
 
 	for para in paras:
-		type_of_para =  str(para.split()[0])
-		true_para = str(para.split()[1])
+                para_len = len(para.split())
+                type_of_para = ""
+                true_para = ""
+                if para_len > 2:
+		    type_of_para =  str(para.split()[1])
+		    true_para = str(para.split()[2])
+                else:
+		    type_of_para =  str(para.split()[0])
+		    true_para = str(para.split()[1])
 		pointer = true_para.startswith('*')
 		array = true_para.endswith('[]')
 		call_para += true_para.lstrip('*').rstrip('[]')
