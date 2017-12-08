@@ -2,11 +2,11 @@ set(ODIR ${CMAKE_CURRENT_BINARY_DIR})
 
 #exec_program(./func-to-decl.py ${CMAKE_CURRENT_SOURCE_DIR}
 #   ARGS ${CMAKE_CURRENT_SOURCE_DIR}/func_list ${ODIR}/decl_list )
-#exec_program(./MPI_wrapper_generator_compress.py ${CMAKE_CURRENT_SOURCE_DIR}
-#   ARGS decl_list.def
-#   ${ODIR}/recorder-mpi-io-compress.cpp
-#   ${ODIR}/func_info
-#   )
+exec_program(./MPI_wrapper_generator_compress.py ${CMAKE_CURRENT_SOURCE_DIR}
+   ARGS decl_list.def
+   ${ODIR}/recorder-mpi-io-compress.cpp
+   ${ODIR}/func_info
+   )
 
 find_package(MPI)
 

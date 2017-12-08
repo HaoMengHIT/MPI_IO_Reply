@@ -21,7 +21,7 @@ def generate_head(code_file, out_file):
 	data += 'struct timespec compute_time_all, mpi_time_all, recorder_time_all;\n'
 	data += 'struct timespec write_time_all, read_time_all;\n'
 	data += 'int ret, result_len, array_size, s_offset;\n'
-	data += 'char comm_name[100], newcomm_name[100], etype_name[100], filetype_name[100], datatype_name[100], oldtype_name[100], newtype_name[100], temp_datatype_name[100];\n'
+	data += 'char comm_name[100], newcomm_name[100], etype_name[100], filetype_name[100], datatype_name[100], sendtype_name[100], recvtype_name[100], oldtype_name[100], newtype_name[100], temp_datatype_name[100];\n'
 	data += '#define AS 300000\n'
 	data += 'char array_of_requests_arraystore[AS], array_of_gsizes_arraystore[AS], array_of_distribs_arraystore[AS], array_of_dargs_arraystore[AS], array_of_psizes_arraystore[AS], array_of_sizes_arraystore[AS], array_of_subsizes_arraystore[AS], array_of_starts_arraystore[AS], array_of_blocklengths_arraystore[AS], array_of_displacements_arraystore[AS], array_of_types_arraystore[AS];\n'
 	# add buffer
@@ -30,7 +30,7 @@ def generate_head(code_file, out_file):
 	data += 'int bytes, written_bytes;\n'
 	data += 'char rec_buffer[4096];\n\n'
 	data += '#include <mpi.h>\n'
-	data += 'MPI_Datatype* temp_datatype;\n'
+	data += 'const MPI_Datatype* temp_datatype;\n'
 
 
 # copy initialzation from recorder
@@ -95,6 +95,8 @@ def generate_one_function(para_list, out_file, func_file):
 	get_name = {'comm': comm_code('comm'), 
 				'newcomm' : comm_code('newcomm'),
 				'datatype': datatype_code('datatype'),
+				'sendtype': datatype_code('sendtype'),
+				'recvtype': datatype_code('recvtype'),
 				'etype': datatype_code('etype'),
 				'filetype': datatype_code('filetype'),
 				'oldtype' : datatype_code('oldtype'),
