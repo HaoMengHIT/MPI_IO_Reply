@@ -302,10 +302,10 @@ void output_func(string func, map<string, vector<string> >& func_info, str_hmap_
 			}
 			else if (parameter == "request")
 				argument = "&request_r" + string("[") + argument + "]";
-			else if ((parameter == "datatype" || parameter == "etype" || parameter == "filetype" || parameter == "oldtype" || parameter == "newtype")) {
+			else if ((parameter == "datatype" || parameter == "etype" || parameter == "filetype" || parameter == "oldtype" || parameter == "newtype"|| parameter == "sendtype" || parameter == "recvtype")) {
 				if (boost::starts_with(argument, "MPI") == 0) {
 					argument = "datatype_r[" + string(argument) + "]";	// TODO
-					if (parameter == "newtype" || func == "MPI_Type_commit")
+					if (parameter == "newtype" || func == "MPI_Type_commit" || func == "MPI_Type_free")
 						argument = "&" + argument;
 				}
 				else if(argument == "MPI_UNSIGNED_INT")
