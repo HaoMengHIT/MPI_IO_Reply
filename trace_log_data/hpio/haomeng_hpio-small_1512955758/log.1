@@ -1,0 +1,1285 @@
+tm1=0.000001200 tm2=0.000000129 func=MPI_Comm_rank comm=MPI_COMM_WORLD rank=rank 
+tm1=0.000000453 tm2=0.000000159 func=MPI_Comm_size comm=MPI_COMM_WORLD size=size 
+tm1=0.000001522 tm2=0.000209701 func=MPI_Bcast buffer=buffer count=1 datatype=MPI_INT root=0 comm=MPI_COMM_WORLD 
+tm1=0.000000226 tm2=0.000024848 func=MPI_Bcast buffer=buffer count=1344 datatype=MPI_BYTE root=0 comm=MPI_COMM_WORLD 
+tm1=0.000002968 tm2=0.000008389 func=MPI_Bcast buffer=buffer count=1 datatype=MPI_INT root=0 comm=MPI_COMM_WORLD 
+tm1=0.000175639 tm2=0.000033183 func=MPI_Type_contiguous count=8 oldtype=MPI_CHAR newtype=4095 
+tm1=0.000000277 tm2=0.000000496 func=MPI_Type_contiguous count=8 oldtype=MPI_CHAR newtype=18446744073709547520 
+tm1=0.000001198 tm2=0.000001274 func=MPI_Type_commit datatype=32126528 
+tm1=0.000000062 tm2=0.000000201 func=MPI_Type_commit datatype=32127232 
+tm1=0.000074166 tm2=0.000370716 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000253 tm2=0.000983333 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000010604 tm2=0.000411974 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_count.c-c.individual.1.r0 amode=9 info=32095024 fh=32139840 
+tm1=0.000000742 tm2=0.000000318 func=MPI_File_set_atomicity fh=32139840 flag=0 
+tm1=0.000000592 tm2=0.000017122 func=MPI_File_set_size fh=32139840 size=32 
+tm1=0.000000836 tm2=0.000009481 func=MPI_File_set_view fh=32139840 disp=8 etype=MPI_CHAR filetype=32127232 datarep=native info=32095024 
+tm1=0.000000432 tm2=0.000000233 func=MPI_File_seek fh=32139840 offset=0 whence=600 
+tm1=0.000000136 tm2=0.000003679 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000674 tm2=0.000042875 func=MPI_File_write fh=32139840 buf=buf count=1 datatype=32126528 status=140736225634736 
+tm1=0.000002158 tm2=0.008149710 func=MPI_File_sync fh=32139840 
+tm1=0.000001087 tm2=0.000019405 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000005530 tm2=0.000484483 func=MPI_File_close fh=32139840 
+tm1=1.001509381 tm2=0.000571505 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000773 tm2=0.000004568 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000005045 tm2=0.000100804 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000003298 tm2=0.000003541 func=MPI_Type_free datatype=32126528 
+tm1=0.000000144 tm2=0.000000719 func=MPI_Type_free datatype=32127232 
+tm1=0.000004024 tm2=0.000003901 func=MPI_Type_contiguous count=16 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000238 tm2=0.000001223 func=MPI_Type_contiguous count=16 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000245 tm2=0.000001652 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000146 tm2=0.000000375 func=MPI_Type_commit datatype=32126528 
+tm1=0.000007343 tm2=0.000401194 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000580 tm2=0.000004012 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000766 tm2=0.000136631 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_count.c-c.individual.2.r0 amode=9 info=32095024 fh=32139840 
+tm1=0.000000422 tm2=0.000000627 func=MPI_File_set_atomicity fh=32139840 flag=0 
+tm1=0.000000535 tm2=0.000068625 func=MPI_File_set_size fh=32139840 size=64 
+tm1=0.000000368 tm2=0.000040532 func=MPI_File_set_view fh=32139840 disp=16 etype=MPI_CHAR filetype=32126528 datarep=native info=32095024 
+tm1=0.000000411 tm2=0.000000589 func=MPI_File_seek fh=32139840 offset=0 whence=600 
+tm1=0.000000243 tm2=0.000006645 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000929 tm2=0.000041684 func=MPI_File_write fh=32139840 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000002107 tm2=0.002515386 func=MPI_File_sync fh=32139840 
+tm1=0.000000922 tm2=0.000058099 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000912 tm2=0.000024429 func=MPI_File_close fh=32139840 
+tm1=1.000870791 tm2=0.000160105 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000001252 tm2=0.000280920 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000003401 tm2=0.000034412 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000005985 tm2=0.000002990 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000001242 tm2=0.000005369 func=MPI_Type_free datatype=32142320 
+tm1=0.000000311 tm2=0.000001417 func=MPI_Type_free datatype=32126528 
+tm1=0.000004988 tm2=0.000007277 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000461 tm2=0.000002224 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000405 tm2=0.000002564 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000255 tm2=0.000000696 func=MPI_Type_commit datatype=32143952 
+tm1=0.000014524 tm2=0.000362260 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000856 tm2=0.000100126 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002334 tm2=0.000389099 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_count.c-c.individual.4.r0 amode=9 info=32095024 fh=32139840 
+tm1=0.000001237 tm2=0.000001342 func=MPI_File_set_atomicity fh=32139840 flag=0 
+tm1=0.000000826 tm2=0.000146834 func=MPI_File_set_size fh=32139840 size=128 
+tm1=0.000001598 tm2=0.000027511 func=MPI_File_set_view fh=32139840 disp=32 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000451 tm2=0.000001107 func=MPI_File_seek fh=32139840 offset=0 whence=600 
+tm1=0.000000536 tm2=0.000026935 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001147 tm2=0.000409713 func=MPI_File_write fh=32139840 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000003250 tm2=0.009807858 func=MPI_File_sync fh=32139840 
+tm1=0.000001793 tm2=0.000375552 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002805 tm2=0.000129520 func=MPI_File_close fh=32139840 
+tm1=1.000672755 tm2=0.000056843 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000815 tm2=0.000005869 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000044214 tm2=0.000013383 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001047 tm2=0.000001447 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000000496 tm2=0.000002859 func=MPI_Type_free datatype=32142320 
+tm1=0.000000166 tm2=0.000001001 func=MPI_Type_free datatype=32143952 
+tm1=0.000002569 tm2=0.000002964 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000237 tm2=0.000001507 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000157 tm2=0.000001228 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000178 tm2=0.000000444 func=MPI_Type_commit datatype=32126528 
+tm1=0.000010290 tm2=0.000365653 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000696 tm2=0.000134192 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001454 tm2=0.000528757 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_count.c-c.individual.8.r0 amode=9 info=32095024 fh=32139840 
+tm1=0.000000756 tm2=0.000000966 func=MPI_File_set_atomicity fh=32139840 flag=0 
+tm1=0.000000586 tm2=0.000049145 func=MPI_File_set_size fh=32139840 size=256 
+tm1=0.000000693 tm2=0.000049521 func=MPI_File_set_view fh=32139840 disp=64 etype=MPI_CHAR filetype=32126528 datarep=native info=32095024 
+tm1=0.000000489 tm2=0.000000744 func=MPI_File_seek fh=32139840 offset=0 whence=600 
+tm1=0.000000684 tm2=0.000086976 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000989 tm2=0.000051632 func=MPI_File_write fh=32139840 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000001958 tm2=0.003927486 func=MPI_File_sync fh=32139840 
+tm1=0.000001164 tm2=0.000041151 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001396 tm2=0.000036794 func=MPI_File_close fh=32139840 
+tm1=1.001281217 tm2=0.000016234 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000259 tm2=0.000006962 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000665 tm2=0.000001522 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000779 tm2=0.000002576 func=MPI_Type_free datatype=32142320 
+tm1=0.000000045 tm2=0.000000319 func=MPI_Type_free datatype=32126528 
+tm1=0.000002056 tm2=0.000002926 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000080 tm2=0.000000260 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000109 tm2=0.000000890 func=MPI_Type_commit datatype=32154960 
+tm1=0.000000053 tm2=0.000000122 func=MPI_Type_commit datatype=32142320 
+tm1=0.000005632 tm2=0.000318257 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000225 tm2=0.000019625 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000492 tm2=0.000103630 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_count.c-c.individual.16.r0 amode=9 info=32095024 fh=32139840 
+tm1=0.000000320 tm2=0.000000333 func=MPI_File_set_atomicity fh=32139840 flag=0 
+tm1=0.000000277 tm2=0.000021371 func=MPI_File_set_size fh=32139840 size=512 
+tm1=0.000000599 tm2=0.000009859 func=MPI_File_set_view fh=32139840 disp=128 etype=MPI_CHAR filetype=32142320 datarep=native info=32095024 
+tm1=0.000000090 tm2=0.000000278 func=MPI_File_seek fh=32139840 offset=0 whence=600 
+tm1=0.000000121 tm2=0.000017561 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000575 tm2=0.000009703 func=MPI_File_write fh=32139840 buf=buf count=1 datatype=32154960 status=140736225634736 
+tm1=0.000000469 tm2=0.002511443 func=MPI_File_sync fh=32139840 
+tm1=0.000001238 tm2=0.000021069 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001008 tm2=0.000023466 func=MPI_File_close fh=32139840 
+tm1=1.000510463 tm2=0.006104523 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000002393 tm2=0.007614275 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000005071 tm2=0.007418231 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000004100 tm2=0.000002949 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000003709 tm2=0.000014717 func=MPI_Type_free datatype=32154960 
+tm1=0.000000311 tm2=0.000001962 func=MPI_Type_free datatype=32142320 
+tm1=0.000007694 tm2=0.000009511 func=MPI_Type_contiguous count=8 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000511 tm2=0.000002769 func=MPI_Type_contiguous count=8 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000470 tm2=0.000002774 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000325 tm2=0.000000961 func=MPI_Type_commit datatype=32142320 
+tm1=0.000116532 tm2=0.003282890 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001712 tm2=0.000012095 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002298 tm2=0.005076268 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_count.c-c.collective.1.r0 amode=9 info=32095024 fh=32141104 
+tm1=0.000001039 tm2=0.000005834 func=MPI_File_set_atomicity fh=32141104 flag=0 
+tm1=0.000000761 tm2=0.000026658 func=MPI_File_set_size fh=32141104 size=32 
+tm1=0.000000942 tm2=0.000020891 func=MPI_File_set_view fh=32141104 disp=8 etype=MPI_CHAR filetype=32142320 datarep=native info=32095024 
+tm1=0.000000196 tm2=0.000000775 func=MPI_File_seek fh=32141104 offset=0 whence=600 
+tm1=0.000000308 tm2=0.000001941 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000003687 tm2=0.001896651 func=MPI_File_write_all fh=32141104 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000002394 tm2=0.006638436 func=MPI_File_sync fh=32141104 
+tm1=0.000001709 tm2=0.000059479 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001469 tm2=0.000042642 func=MPI_File_close fh=32141104 
+tm1=1.001264846 tm2=0.000066941 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000001332 tm2=0.000052891 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000004680 tm2=0.000018339 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000002748 tm2=0.000006096 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000001391 tm2=0.000005525 func=MPI_Type_free datatype=32143952 
+tm1=0.000000215 tm2=0.000001411 func=MPI_Type_free datatype=32142320 
+tm1=0.000004305 tm2=0.000037475 func=MPI_Type_contiguous count=16 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000641 tm2=0.000001241 func=MPI_Type_contiguous count=16 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000255 tm2=0.000002032 func=MPI_Type_commit datatype=32156976 
+tm1=0.000000210 tm2=0.000000510 func=MPI_Type_commit datatype=32143952 
+tm1=0.000010336 tm2=0.000188139 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000285 tm2=0.000076586 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001562 tm2=0.000389692 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_count.c-c.collective.2.r0 amode=9 info=32095024 fh=32141104 
+tm1=0.000001091 tm2=0.000002823 func=MPI_File_set_atomicity fh=32141104 flag=0 
+tm1=0.000001056 tm2=0.000039106 func=MPI_File_set_size fh=32141104 size=64 
+tm1=0.000001076 tm2=0.000045819 func=MPI_File_set_view fh=32141104 disp=16 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000305 tm2=0.000000971 func=MPI_File_seek fh=32141104 offset=0 whence=600 
+tm1=0.000000496 tm2=0.000010061 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001101 tm2=0.000487150 func=MPI_File_write_all fh=32141104 buf=buf count=1 datatype=32156976 status=140736225634736 
+tm1=0.000003028 tm2=0.004810699 func=MPI_File_sync fh=32141104 
+tm1=0.000001917 tm2=0.000060123 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002072 tm2=0.000058377 func=MPI_File_close fh=32141104 
+tm1=1.001123585 tm2=0.000029291 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000423 tm2=0.000002720 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002818 tm2=0.000002263 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000605 tm2=0.000000986 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000000484 tm2=0.000005306 func=MPI_Type_free datatype=32156976 
+tm1=0.000000102 tm2=0.000000664 func=MPI_Type_free datatype=32143952 
+tm1=0.000001682 tm2=0.000003486 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000145 tm2=0.000001010 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000127 tm2=0.000001120 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000107 tm2=0.000000353 func=MPI_Type_commit datatype=32142320 
+tm1=0.000005250 tm2=0.000246093 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000122 tm2=0.000036469 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000592 tm2=0.000254255 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_count.c-c.collective.4.r0 amode=9 info=32095024 fh=32141104 
+tm1=0.000000528 tm2=0.000001485 func=MPI_File_set_atomicity fh=32141104 flag=0 
+tm1=0.000000417 tm2=0.000015116 func=MPI_File_set_size fh=32141104 size=128 
+tm1=0.000000704 tm2=0.000030969 func=MPI_File_set_view fh=32141104 disp=32 etype=MPI_CHAR filetype=32142320 datarep=native info=32095024 
+tm1=0.000000163 tm2=0.000000461 func=MPI_File_seek fh=32141104 offset=0 whence=600 
+tm1=0.000000250 tm2=0.000001343 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000453 tm2=0.000098343 func=MPI_File_write_all fh=32141104 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000001080 tm2=0.001884856 func=MPI_File_sync fh=32141104 
+tm1=0.000000663 tm2=0.000038599 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000611 tm2=0.000018940 func=MPI_File_close fh=32141104 
+tm1=1.000937147 tm2=0.000048644 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000602 tm2=0.000015036 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001309 tm2=0.000004090 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001910 tm2=0.000003742 func=MPI_Type_free datatype=32143952 
+tm1=0.000000141 tm2=0.000000904 func=MPI_Type_free datatype=32142320 
+tm1=0.000002030 tm2=0.000003681 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000210 tm2=0.000001154 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000146 tm2=0.000001236 func=MPI_Type_commit datatype=32157184 
+tm1=0.000000141 tm2=0.000000391 func=MPI_Type_commit datatype=32143952 
+tm1=0.000008353 tm2=0.000490476 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000735 tm2=0.000067253 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001323 tm2=0.000257781 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_count.c-c.collective.8.r0 amode=9 info=32095024 fh=32141104 
+tm1=0.000000598 tm2=0.000002171 func=MPI_File_set_atomicity fh=32141104 flag=0 
+tm1=0.000000629 tm2=0.000019231 func=MPI_File_set_size fh=32141104 size=256 
+tm1=0.000000626 tm2=0.000018927 func=MPI_File_set_view fh=32141104 disp=64 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000165 tm2=0.000000631 func=MPI_File_seek fh=32141104 offset=0 whence=600 
+tm1=0.000000224 tm2=0.000004545 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000664 tm2=0.000098082 func=MPI_File_write_all fh=32141104 buf=buf count=1 datatype=32157184 status=140736225634736 
+tm1=0.000001071 tm2=0.005900610 func=MPI_File_sync fh=32141104 
+tm1=0.000002134 tm2=0.006735797 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002011 tm2=0.000035935 func=MPI_File_close fh=32141104 
+tm1=1.001171853 tm2=0.000016803 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000247 tm2=0.000001642 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002400 tm2=0.000001391 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000405 tm2=0.000000714 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000000307 tm2=0.000004105 func=MPI_Type_free datatype=32157184 
+tm1=0.000000050 tm2=0.000000410 func=MPI_Type_free datatype=32143952 
+tm1=0.000001498 tm2=0.000002420 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000068 tm2=0.000000395 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000125 tm2=0.000000914 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000046 tm2=0.000000193 func=MPI_Type_commit datatype=32142320 
+tm1=0.000005041 tm2=0.000280298 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000047 tm2=0.000026801 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000369 tm2=0.000084373 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_count.c-c.collective.16.r0 amode=9 info=32095024 fh=32141104 
+tm1=0.000000105 tm2=0.000000661 func=MPI_File_set_atomicity fh=32141104 flag=0 
+tm1=0.000011377 tm2=0.000013487 func=MPI_File_set_size fh=32141104 size=512 
+tm1=0.000000338 tm2=0.000008493 func=MPI_File_set_view fh=32141104 disp=128 etype=MPI_CHAR filetype=32142320 datarep=native info=32095024 
+tm1=0.000000104 tm2=0.000000285 func=MPI_File_seek fh=32141104 offset=0 whence=600 
+tm1=0.000000143 tm2=0.000000686 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000302 tm2=0.000034113 func=MPI_File_write_all fh=32141104 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000000539 tm2=0.011629902 func=MPI_File_sync fh=32141104 
+tm1=0.000001365 tm2=0.000017932 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001118 tm2=0.000035461 func=MPI_File_close fh=32141104 
+tm1=1.000185469 tm2=0.000503719 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000857 tm2=0.000045807 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001239 tm2=0.000003268 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001843 tm2=0.000002484 func=MPI_Type_free datatype=32143952 
+tm1=0.000000148 tm2=0.000001019 func=MPI_Type_free datatype=32142320 
+tm1=0.000002282 tm2=0.000004151 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000194 tm2=0.000000815 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000141 tm2=0.000001250 func=MPI_Type_commit datatype=32157184 
+tm1=0.000000144 tm2=0.000000342 func=MPI_Type_commit datatype=32143952 
+tm1=0.000006548 tm2=0.000790863 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000443 tm2=0.000054443 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001109 tm2=0.000135594 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_size.c-c.individual.8.r0 amode=9 info=32095024 fh=32141104 
+tm1=0.000000513 tm2=0.000000810 func=MPI_File_set_atomicity fh=32141104 flag=0 
+tm1=0.000000668 tm2=0.000054307 func=MPI_File_set_size fh=32141104 size=128 
+tm1=0.000000431 tm2=0.000012814 func=MPI_File_set_view fh=32141104 disp=32 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000210 tm2=0.000000501 func=MPI_File_seek fh=32141104 offset=0 whence=600 
+tm1=0.000000245 tm2=0.000016204 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000872 tm2=0.000015036 func=MPI_File_write fh=32141104 buf=buf count=1 datatype=32157184 status=140736225634736 
+tm1=0.000001160 tm2=0.002865458 func=MPI_File_sync fh=32141104 
+tm1=0.000001236 tm2=0.000014141 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001227 tm2=0.000032324 func=MPI_File_close fh=32141104 
+tm1=1.000384905 tm2=0.000488143 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000001316 tm2=0.000008881 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000003012 tm2=0.000006864 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001696 tm2=0.000002297 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000000995 tm2=0.000005659 func=MPI_Type_free datatype=32157184 
+tm1=0.000000290 tm2=0.000001781 func=MPI_Type_free datatype=32143952 
+tm1=0.000003733 tm2=0.000005288 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000445 tm2=0.000003122 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000355 tm2=0.000002472 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000305 tm2=0.000000876 func=MPI_Type_commit datatype=32157184 
+tm1=0.000018371 tm2=0.000977708 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001230 tm2=0.000056912 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001646 tm2=0.000284743 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_size.c-c.individual.16.r0 amode=9 info=32095024 fh=32141104 
+tm1=0.000001381 tm2=0.000001326 func=MPI_File_set_atomicity fh=32141104 flag=0 
+tm1=0.000001070 tm2=0.000131535 func=MPI_File_set_size fh=32141104 size=256 
+tm1=0.000001581 tm2=0.000026973 func=MPI_File_set_view fh=32141104 disp=64 etype=MPI_CHAR filetype=32157184 datarep=native info=32095024 
+tm1=0.000000440 tm2=0.000001021 func=MPI_File_seek fh=32141104 offset=0 whence=600 
+tm1=0.000000635 tm2=0.000011357 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001136 tm2=0.000034112 func=MPI_File_write fh=32141104 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000002047 tm2=0.008413533 func=MPI_File_sync fh=32141104 
+tm1=0.000002762 tm2=0.000075518 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001806 tm2=0.000104717 func=MPI_File_close fh=32141104 
+tm1=1.000573277 tm2=0.001123784 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000996 tm2=0.000060448 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002176 tm2=0.000004562 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001003 tm2=0.000001631 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000000798 tm2=0.000003820 func=MPI_Type_free datatype=32142320 
+tm1=0.000000187 tm2=0.000001301 func=MPI_Type_free datatype=32157184 
+tm1=0.000002622 tm2=0.000003422 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000273 tm2=0.000001584 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000186 tm2=0.000001419 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000185 tm2=0.000000443 func=MPI_Type_commit datatype=32142320 
+tm1=0.000014686 tm2=0.000265066 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000549 tm2=0.000059680 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001631 tm2=0.000139888 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_size.c-c.individual.32.r0 amode=9 info=32095024 fh=32141104 
+tm1=0.000000530 tm2=0.000001018 func=MPI_File_set_atomicity fh=32141104 flag=0 
+tm1=0.000000953 tm2=0.000017474 func=MPI_File_set_size fh=32141104 size=512 
+tm1=0.000000618 tm2=0.000014751 func=MPI_File_set_view fh=32141104 disp=128 etype=MPI_CHAR filetype=32142320 datarep=native info=32095024 
+tm1=0.000000278 tm2=0.000000874 func=MPI_File_seek fh=32141104 offset=0 whence=600 
+tm1=0.000000228 tm2=0.000061336 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000808 tm2=0.000337589 func=MPI_File_write fh=32141104 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000001971 tm2=0.008123254 func=MPI_File_sync fh=32141104 
+tm1=0.000000989 tm2=0.000068152 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001323 tm2=0.000031832 func=MPI_File_close fh=32141104 
+tm1=1.001335584 tm2=0.000030854 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000001148 tm2=0.000008962 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001446 tm2=0.000003787 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000002292 tm2=0.000003409 func=MPI_Type_free datatype=32143952 
+tm1=0.000000173 tm2=0.000001133 func=MPI_Type_free datatype=32142320 
+tm1=0.000003009 tm2=0.000004548 func=MPI_Type_contiguous count=256 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000244 tm2=0.000001106 func=MPI_Type_contiguous count=256 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000212 tm2=0.000001473 func=MPI_Type_commit datatype=32157184 
+tm1=0.000000174 tm2=0.000000461 func=MPI_Type_commit datatype=32143952 
+tm1=0.000022913 tm2=0.000330006 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000710 tm2=0.000129813 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001283 tm2=0.000200264 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_size.c-c.individual.64.r0 amode=9 info=32095024 fh=32141104 
+tm1=0.000000500 tm2=0.000000737 func=MPI_File_set_atomicity fh=32141104 flag=0 
+tm1=0.000000645 tm2=0.000048501 func=MPI_File_set_size fh=32141104 size=1024 
+tm1=0.000000661 tm2=0.000016736 func=MPI_File_set_view fh=32141104 disp=256 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000257 tm2=0.000000900 func=MPI_File_seek fh=32141104 offset=0 whence=600 
+tm1=0.000000345 tm2=0.000062588 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001341 tm2=0.000211087 func=MPI_File_write fh=32141104 buf=buf count=1 datatype=32157184 status=140736225634736 
+tm1=0.000002398 tm2=0.003429950 func=MPI_File_sync fh=32141104 
+tm1=0.000000913 tm2=0.000040582 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001144 tm2=0.000027200 func=MPI_File_close fh=32141104 
+tm1=1.000674397 tm2=0.000029472 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000520 tm2=0.000012029 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001127 tm2=0.000045027 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000567 tm2=0.000001003 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000001313 tm2=0.000002319 func=MPI_Type_free datatype=32157184 
+tm1=0.000000088 tm2=0.000000789 func=MPI_Type_free datatype=32143952 
+tm1=0.000001957 tm2=0.000002454 func=MPI_Type_contiguous count=512 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000146 tm2=0.000000866 func=MPI_Type_contiguous count=512 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000105 tm2=0.000001105 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000097 tm2=0.000000219 func=MPI_Type_commit datatype=32157184 
+tm1=0.000019402 tm2=0.000339715 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000363 tm2=0.000044809 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000746 tm2=0.000171853 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_size.c-c.individual.128.r0 amode=9 info=32095024 fh=32141104 
+tm1=0.000000316 tm2=0.000000649 func=MPI_File_set_atomicity fh=32141104 flag=0 
+tm1=0.000000465 tm2=0.000012488 func=MPI_File_set_size fh=32141104 size=2048 
+tm1=0.000000444 tm2=0.000007940 func=MPI_File_set_view fh=32141104 disp=512 etype=MPI_CHAR filetype=32157184 datarep=native info=32095024 
+tm1=0.000000143 tm2=0.000000550 func=MPI_File_seek fh=32141104 offset=0 whence=600 
+tm1=0.000000154 tm2=0.000071745 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000498 tm2=0.000010321 func=MPI_File_write fh=32141104 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000000850 tm2=0.002942714 func=MPI_File_sync fh=32141104 
+tm1=0.000000649 tm2=0.000007387 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000658 tm2=0.000019074 func=MPI_File_close fh=32141104 
+tm1=1.001084724 tm2=0.000850027 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000748 tm2=0.000015576 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001242 tm2=0.000004446 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001486 tm2=0.000002938 func=MPI_Type_free datatype=32142320 
+tm1=0.000000078 tm2=0.000000828 func=MPI_Type_free datatype=32157184 
+tm1=0.000002424 tm2=0.000017883 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000306 tm2=0.000001691 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000241 tm2=0.000001687 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000097 tm2=0.000000207 func=MPI_Type_commit datatype=32142320 
+tm1=0.000005585 tm2=0.000163970 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000094 tm2=0.000052666 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000475 tm2=0.000131775 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_size.c-c.collective.8.r0 amode=9 info=32095024 fh=32141104 
+tm1=0.000000254 tm2=0.000001233 func=MPI_File_set_atomicity fh=32141104 flag=0 
+tm1=0.000000391 tm2=0.000014109 func=MPI_File_set_size fh=32141104 size=128 
+tm1=0.000000434 tm2=0.000014537 func=MPI_File_set_view fh=32141104 disp=32 etype=MPI_CHAR filetype=32142320 datarep=native info=32095024 
+tm1=0.000000136 tm2=0.000000479 func=MPI_File_seek fh=32141104 offset=0 whence=600 
+tm1=0.000000140 tm2=0.000003414 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000444 tm2=0.000051010 func=MPI_File_write_all fh=32141104 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000000943 tm2=0.003958716 func=MPI_File_sync fh=32141104 
+tm1=0.000002306 tm2=0.000024737 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000003027 tm2=0.000073344 func=MPI_File_close fh=32141104 
+tm1=1.000534101 tm2=0.000275413 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000001946 tm2=0.000166001 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000006178 tm2=0.000022254 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000002686 tm2=0.000006918 func=MPI_Type_free datatype=32143952 
+tm1=0.000000260 tm2=0.000001831 func=MPI_Type_free datatype=32142320 
+tm1=0.000006653 tm2=0.000007593 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000621 tm2=0.000003282 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000450 tm2=0.000002651 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000290 tm2=0.000000800 func=MPI_Type_commit datatype=32142320 
+tm1=0.000018833 tm2=0.000121737 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000465 tm2=0.000156187 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002126 tm2=0.000704117 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_size.c-c.collective.16.r0 amode=9 info=32095024 fh=32141104 
+tm1=0.000001166 tm2=0.000004662 func=MPI_File_set_atomicity fh=32141104 flag=0 
+tm1=0.000000845 tm2=0.000047336 func=MPI_File_set_size fh=32141104 size=256 
+tm1=0.000001620 tm2=0.000333952 func=MPI_File_set_view fh=32141104 disp=64 etype=MPI_CHAR filetype=32142320 datarep=native info=32095024 
+tm1=0.000001576 tm2=0.000003867 func=MPI_File_seek fh=32141104 offset=0 whence=600 
+tm1=0.000000625 tm2=0.000112133 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002466 tm2=0.000490411 func=MPI_File_write_all fh=32141104 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000003477 tm2=0.004828229 func=MPI_File_sync fh=32141104 
+tm1=0.000001746 tm2=0.000075268 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001891 tm2=0.000062897 func=MPI_File_close fh=32141104 
+tm1=1.000521160 tm2=0.000084963 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000586 tm2=0.000011234 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001375 tm2=0.000027244 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000695 tm2=0.000001624 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000000632 tm2=0.000009617 func=MPI_Type_free datatype=32143952 
+tm1=0.000000162 tm2=0.000011024 func=MPI_Type_free datatype=32142320 
+tm1=0.000001364 tm2=0.000010770 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000173 tm2=0.000001346 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000132 tm2=0.000000738 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000065 tm2=0.000000172 func=MPI_Type_commit datatype=32142320 
+tm1=0.000028329 tm2=0.000082160 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000192 tm2=0.000088706 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000712 tm2=0.000680789 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_size.c-c.collective.32.r0 amode=9 info=32095024 fh=32141104 
+tm1=0.000000230 tm2=0.000010359 func=MPI_File_set_atomicity fh=32141104 flag=0 
+tm1=0.000000328 tm2=0.000041288 func=MPI_File_set_size fh=32141104 size=512 
+tm1=0.000007829 tm2=0.000028247 func=MPI_File_set_view fh=32141104 disp=128 etype=MPI_CHAR filetype=32142320 datarep=native info=32095024 
+tm1=0.000000213 tm2=0.000000828 func=MPI_File_seek fh=32141104 offset=0 whence=600 
+tm1=0.000000125 tm2=0.000002823 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000008005 tm2=0.000222041 func=MPI_File_write_all fh=32141104 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000000707 tm2=0.001981105 func=MPI_File_sync fh=32141104 
+tm1=0.000000509 tm2=0.002167427 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000996 tm2=0.000064847 func=MPI_File_close fh=32141104 
+tm1=1.001082928 tm2=0.000064985 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000906 tm2=0.000078319 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000007212 tm2=0.000012414 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000003146 tm2=0.000004697 func=MPI_Type_free datatype=32143952 
+tm1=0.000000210 tm2=0.000001361 func=MPI_Type_free datatype=32142320 
+tm1=0.000006237 tm2=0.000005742 func=MPI_Type_contiguous count=256 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000440 tm2=0.000001925 func=MPI_Type_contiguous count=256 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000350 tm2=0.000002171 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000220 tm2=0.000000520 func=MPI_Type_commit datatype=32142320 
+tm1=0.000028356 tm2=0.000679086 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001170 tm2=0.000077860 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002221 tm2=0.000663746 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_size.c-c.collective.64.r0 amode=9 info=32095024 fh=32153024 
+tm1=0.000001485 tm2=0.000004157 func=MPI_File_set_atomicity fh=32153024 flag=0 
+tm1=0.000001215 tm2=0.000135951 func=MPI_File_set_size fh=32153024 size=1024 
+tm1=0.000001531 tm2=0.000132290 func=MPI_File_set_view fh=32153024 disp=256 etype=MPI_CHAR filetype=32142320 datarep=native info=32095024 
+tm1=0.000000555 tm2=0.000001586 func=MPI_File_seek fh=32153024 offset=0 whence=600 
+tm1=0.000000621 tm2=0.000130970 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002671 tm2=0.000290490 func=MPI_File_write_all fh=32153024 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000003732 tm2=0.015098855 func=MPI_File_sync fh=32153024 
+tm1=0.000002401 tm2=0.000043276 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000003186 tm2=0.000081916 func=MPI_File_close fh=32153024 
+tm1=1.000689713 tm2=0.000025268 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000242 tm2=0.000002165 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000769 tm2=0.000001862 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001395 tm2=0.000002108 func=MPI_Type_free datatype=32143952 
+tm1=0.000000053 tm2=0.000000583 func=MPI_Type_free datatype=32142320 
+tm1=0.000001779 tm2=0.000002896 func=MPI_Type_contiguous count=512 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000079 tm2=0.000000305 func=MPI_Type_contiguous count=512 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000058 tm2=0.000000748 func=MPI_Type_commit datatype=32158064 
+tm1=0.000000055 tm2=0.000000111 func=MPI_Type_commit datatype=32143952 
+tm1=0.000011656 tm2=0.000341364 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000209 tm2=0.000040215 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000486 tm2=0.000104899 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_size.c-c.collective.128.r0 amode=9 info=32095024 fh=32153024 
+tm1=0.000000264 tm2=0.000002045 func=MPI_File_set_atomicity fh=32153024 flag=0 
+tm1=0.000000357 tm2=0.000011703 func=MPI_File_set_size fh=32153024 size=2048 
+tm1=0.000000377 tm2=0.000010350 func=MPI_File_set_view fh=32153024 disp=512 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000090 tm2=0.000000261 func=MPI_File_seek fh=32153024 offset=0 whence=600 
+tm1=0.000000088 tm2=0.000002065 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000224 tm2=0.000049768 func=MPI_File_write_all fh=32153024 buf=buf count=1 datatype=32158064 status=140736225634736 
+tm1=0.000000626 tm2=0.001814616 func=MPI_File_sync fh=32153024 
+tm1=0.000000396 tm2=0.000014478 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000466 tm2=0.000014033 func=MPI_File_close fh=32153024 
+tm1=1.000500923 tm2=0.000024138 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000286 tm2=0.000030153 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002032 tm2=0.000001607 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001157 tm2=0.000001992 func=MPI_Type_free datatype=32158064 
+tm1=0.000000060 tm2=0.000000735 func=MPI_Type_free datatype=32143952 
+tm1=0.000001586 tm2=0.000001653 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000119 tm2=0.000001339 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000104 tm2=0.000000749 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000107 tm2=0.000000282 func=MPI_Type_commit datatype=32143952 
+tm1=0.000003852 tm2=0.000406061 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000233 tm2=0.000025827 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000435 tm2=0.000071598 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_spacing.c-c.individual.1.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000000242 tm2=0.000000280 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000000258 tm2=0.000036677 func=MPI_File_set_size fh=32151600 size=128 
+tm1=0.000000258 tm2=0.000006423 func=MPI_File_set_view fh=32151600 disp=32 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000110 tm2=0.000000294 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000143 tm2=0.000005509 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000273 tm2=0.000008093 func=MPI_File_write fh=32151600 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000000610 tm2=0.011127867 func=MPI_File_sync fh=32151600 
+tm1=0.000001034 tm2=0.000014828 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000889 tm2=0.000071605 func=MPI_File_close fh=32151600 
+tm1=1.001082173 tm2=0.000053799 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000001125 tm2=0.000015357 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002674 tm2=0.000007714 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000002250 tm2=0.000005892 func=MPI_Type_free datatype=32142320 
+tm1=0.000000348 tm2=0.000001474 func=MPI_Type_free datatype=32143952 
+tm1=0.000005035 tm2=0.000008021 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000524 tm2=0.000001776 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000449 tm2=0.000002341 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000323 tm2=0.000000741 func=MPI_Type_commit datatype=32143952 
+tm1=0.000015594 tm2=0.001086025 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001186 tm2=0.000104430 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002119 tm2=0.000223701 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_spacing.c-c.individual.2.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000000898 tm2=0.000001418 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000001649 tm2=0.000150131 func=MPI_File_set_size fh=32151600 size=128 
+tm1=0.000000933 tm2=0.000029336 func=MPI_File_set_view fh=32151600 disp=32 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000520 tm2=0.000001297 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000001362 tm2=0.000016159 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002013 tm2=0.000078965 func=MPI_File_write fh=32151600 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000002677 tm2=0.008657140 func=MPI_File_sync fh=32151600 
+tm1=0.000001826 tm2=0.002373820 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002109 tm2=0.000044409 func=MPI_File_close fh=32151600 
+tm1=1.002491874 tm2=0.001192878 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000002092 tm2=0.000017784 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002868 tm2=0.000009580 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001880 tm2=0.000005614 func=MPI_Type_free datatype=32142320 
+tm1=0.000000211 tm2=0.000001154 func=MPI_Type_free datatype=32143952 
+tm1=0.000004933 tm2=0.000007297 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000337 tm2=0.000001174 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000323 tm2=0.000002314 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000217 tm2=0.000000524 func=MPI_Type_commit datatype=32143952 
+tm1=0.000011480 tm2=0.002562391 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001038 tm2=0.000086255 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000003316 tm2=0.000405004 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_spacing.c-c.individual.4.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000001310 tm2=0.000001558 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000001356 tm2=0.000051241 func=MPI_File_set_size fh=32151600 size=128 
+tm1=0.000001840 tm2=0.000035266 func=MPI_File_set_view fh=32151600 disp=32 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000479 tm2=0.000001295 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000635 tm2=0.000016973 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001713 tm2=0.000142580 func=MPI_File_write fh=32151600 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000003785 tm2=0.005524720 func=MPI_File_sync fh=32151600 
+tm1=0.000002454 tm2=0.000095785 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002097 tm2=0.000059652 func=MPI_File_close fh=32151600 
+tm1=1.001036919 tm2=0.000072645 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000961 tm2=0.000007149 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000003323 tm2=0.000007899 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001923 tm2=0.000007627 func=MPI_Type_free datatype=32142320 
+tm1=0.000000287 tm2=0.000001666 func=MPI_Type_free datatype=32143952 
+tm1=0.000005890 tm2=0.000009052 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000494 tm2=0.000001852 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000423 tm2=0.000002592 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000312 tm2=0.000000806 func=MPI_Type_commit datatype=32143952 
+tm1=0.000014183 tm2=0.000919434 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001118 tm2=0.000213030 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002331 tm2=0.000314232 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_spacing.c-c.individual.8.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000000861 tm2=0.000001752 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000001530 tm2=0.000035696 func=MPI_File_set_size fh=32151600 size=128 
+tm1=0.000001555 tm2=0.000033455 func=MPI_File_set_view fh=32151600 disp=32 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000911 tm2=0.000001495 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000690 tm2=0.000130890 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001586 tm2=0.000062147 func=MPI_File_write fh=32151600 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000002673 tm2=0.010074676 func=MPI_File_sync fh=32151600 
+tm1=0.000002477 tm2=0.002402375 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000003726 tm2=0.000076159 func=MPI_File_close fh=32151600 
+tm1=1.001461991 tm2=0.000054739 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000797 tm2=0.000005582 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002148 tm2=0.000095019 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001960 tm2=0.000006089 func=MPI_Type_free datatype=32142320 
+tm1=0.000000265 tm2=0.000001674 func=MPI_Type_free datatype=32143952 
+tm1=0.000004371 tm2=0.000006394 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000346 tm2=0.000001513 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000290 tm2=0.000002197 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000270 tm2=0.000000628 func=MPI_Type_commit datatype=32143952 
+tm1=0.000340561 tm2=0.000011191 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000343 tm2=0.000252407 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001359 tm2=0.000324274 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_spacing.c-c.individual.16.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000000717 tm2=0.000001428 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000000869 tm2=0.000094287 func=MPI_File_set_size fh=32151600 size=128 
+tm1=0.000000913 tm2=0.000018234 func=MPI_File_set_view fh=32151600 disp=32 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000309 tm2=0.000000741 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000390 tm2=0.000008145 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001223 tm2=0.000061218 func=MPI_File_write fh=32151600 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000003638 tm2=0.004032975 func=MPI_File_sync fh=32151600 
+tm1=0.000001614 tm2=0.000065935 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001361 tm2=0.000041265 func=MPI_File_close fh=32151600 
+tm1=1.001370206 tm2=0.000030115 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000450 tm2=0.000003111 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001658 tm2=0.000004117 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001221 tm2=0.000004374 func=MPI_Type_free datatype=32142320 
+tm1=0.000000126 tm2=0.000000744 func=MPI_Type_free datatype=32143952 
+tm1=0.000003350 tm2=0.000004963 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000195 tm2=0.000000548 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000194 tm2=0.000001493 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000127 tm2=0.000000272 func=MPI_Type_commit datatype=32143952 
+tm1=0.000006986 tm2=0.000609893 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000552 tm2=0.000053447 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001060 tm2=0.000259993 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_spacing.c-c.collective.1.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000000623 tm2=0.000004665 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000000737 tm2=0.000024135 func=MPI_File_set_size fh=32151600 size=128 
+tm1=0.000000655 tm2=0.000023525 func=MPI_File_set_view fh=32151600 disp=32 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000191 tm2=0.000000740 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000278 tm2=0.000005120 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000618 tm2=0.000097464 func=MPI_File_write_all fh=32151600 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000001414 tm2=0.002755447 func=MPI_File_sync fh=32151600 
+tm1=0.000001066 tm2=0.008470229 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002442 tm2=0.000077176 func=MPI_File_close fh=32151600 
+tm1=1.000502398 tm2=0.001498378 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000570 tm2=0.000043207 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001221 tm2=0.000002491 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000787 tm2=0.000002621 func=MPI_Type_free datatype=32142320 
+tm1=0.000000076 tm2=0.000000630 func=MPI_Type_free datatype=32143952 
+tm1=0.000002159 tm2=0.000003732 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000114 tm2=0.000000320 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000088 tm2=0.000001081 func=MPI_Type_commit datatype=32158064 
+tm1=0.000000068 tm2=0.000000187 func=MPI_Type_commit datatype=32142320 
+tm1=0.000004564 tm2=0.000286642 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000088 tm2=0.000034932 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000542 tm2=0.000144367 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_spacing.c-c.collective.2.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000000384 tm2=0.000001161 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000000342 tm2=0.000012275 func=MPI_File_set_size fh=32151600 size=128 
+tm1=0.000000429 tm2=0.000011308 func=MPI_File_set_view fh=32151600 disp=32 etype=MPI_CHAR filetype=32142320 datarep=native info=32095024 
+tm1=0.000000150 tm2=0.000000365 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000188 tm2=0.000001328 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000369 tm2=0.000046948 func=MPI_File_write_all fh=32151600 buf=buf count=1 datatype=32158064 status=140736225634736 
+tm1=0.000000712 tm2=0.002368257 func=MPI_File_sync fh=32151600 
+tm1=0.000000731 tm2=0.000038106 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000743 tm2=0.000020194 func=MPI_File_close fh=32151600 
+tm1=1.001204797 tm2=0.000040025 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000672 tm2=0.000047531 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001566 tm2=0.000004433 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001016 tm2=0.000001383 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000000628 tm2=0.000003467 func=MPI_Type_free datatype=32158064 
+tm1=0.000000166 tm2=0.000001131 func=MPI_Type_free datatype=32142320 
+tm1=0.000001908 tm2=0.000004568 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000244 tm2=0.000000897 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000153 tm2=0.000001393 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000181 tm2=0.000000466 func=MPI_Type_commit datatype=32158064 
+tm1=0.000051420 tm2=0.000062610 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000199 tm2=0.000043890 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000830 tm2=0.000346867 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_spacing.c-c.collective.4.r0 amode=9 info=32095024 fh=32139808 
+tm1=0.000000913 tm2=0.000002498 func=MPI_File_set_atomicity fh=32139808 flag=0 
+tm1=0.000000683 tm2=0.000017587 func=MPI_File_set_size fh=32139808 size=128 
+tm1=0.000000543 tm2=0.000019099 func=MPI_File_set_view fh=32139808 disp=32 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000233 tm2=0.000000728 func=MPI_File_seek fh=32139808 offset=0 whence=600 
+tm1=0.000000318 tm2=0.000001962 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000660 tm2=0.000105759 func=MPI_File_write_all fh=32139808 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000001951 tm2=0.003157704 func=MPI_File_sync fh=32139808 
+tm1=0.000001072 tm2=0.007380994 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002335 tm2=0.000053998 func=MPI_File_close fh=32139808 
+tm1=1.000517433 tm2=0.000520705 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000645 tm2=0.000011889 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000920 tm2=0.000049677 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001222 tm2=0.000003625 func=MPI_Type_free datatype=32143952 
+tm1=0.000000081 tm2=0.000000684 func=MPI_Type_free datatype=32158064 
+tm1=0.000002864 tm2=0.000003904 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000154 tm2=0.000000542 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000189 tm2=0.000001271 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000084 tm2=0.000000197 func=MPI_Type_commit datatype=32143952 
+tm1=0.000005525 tm2=0.000248909 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000171 tm2=0.000028833 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000557 tm2=0.000141247 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_spacing.c-c.collective.8.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000000306 tm2=0.000001154 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000000353 tm2=0.000011031 func=MPI_File_set_size fh=32151600 size=128 
+tm1=0.000000436 tm2=0.000012497 func=MPI_File_set_view fh=32151600 disp=32 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000241 tm2=0.000000505 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000196 tm2=0.000002205 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000476 tm2=0.000041829 func=MPI_File_write_all fh=32151600 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000000776 tm2=0.010588771 func=MPI_File_sync fh=32151600 
+tm1=0.000001488 tm2=0.000018673 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001376 tm2=0.000031093 func=MPI_File_close fh=32151600 
+tm1=1.000884929 tm2=0.000444895 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000001100 tm2=0.000371396 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000007501 tm2=0.001723790 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001719 tm2=0.000003370 func=MPI_Type_free datatype=32142320 
+tm1=0.000000135 tm2=0.000000861 func=MPI_Type_free datatype=32143952 
+tm1=0.000002601 tm2=0.000002473 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000192 tm2=0.000000657 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000128 tm2=0.000001106 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000093 tm2=0.000000361 func=MPI_Type_commit datatype=32143952 
+tm1=0.000006325 tm2=0.001023556 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000462 tm2=0.000055789 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000932 tm2=0.000198659 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_spacing.c-c.collective.16.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000000516 tm2=0.000001771 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000000628 tm2=0.000016212 func=MPI_File_set_size fh=32151600 size=128 
+tm1=0.000000478 tm2=0.000016026 func=MPI_File_set_view fh=32151600 disp=32 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000184 tm2=0.000000502 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000255 tm2=0.000001406 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000684 tm2=0.000069271 func=MPI_File_write_all fh=32151600 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000001265 tm2=0.002104300 func=MPI_File_sync fh=32151600 
+tm1=0.000001188 tm2=0.000422850 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001617 tm2=0.000062060 func=MPI_File_close fh=32151600 
+tm1=1.000568426 tm2=0.000110229 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000471 tm2=0.000006507 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000003445 tm2=0.000001323 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000690 tm2=0.000002926 func=MPI_Type_free datatype=32142320 
+tm1=0.000000063 tm2=0.000000635 func=MPI_Type_free datatype=32143952 
+tm1=0.000002226 tm2=0.000002565 func=MPI_Type_contiguous count=8 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000104 tm2=0.000000387 func=MPI_Type_contiguous count=8 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000088 tm2=0.000000794 func=MPI_Type_commit datatype=32158064 
+tm1=0.000000072 tm2=0.000000181 func=MPI_Type_commit datatype=32142320 
+tm1=0.000001841 tm2=0.000627864 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000228 tm2=0.000002460 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000604 tm2=0.000074420 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_count.c-c.individual.1.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000000311 tm2=0.000000620 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000000387 tm2=0.000077554 func=MPI_File_set_size fh=32151600 size=32 
+tm1=0.000000357 tm2=0.000016144 func=MPI_File_set_view fh=32151600 disp=8 etype=MPI_CHAR filetype=32142320 datarep=native info=32095024 
+tm1=0.000000185 tm2=0.000000284 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000129 tm2=0.000002767 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000003837 tm2=0.000009712 func=MPI_File_read fh=32151600 buf=buf count=1 datatype=32158064 status=140736225634736 
+tm1=0.000000896 tm2=0.000002340 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000401 tm2=0.000011841 func=MPI_File_close fh=32151600 
+tm1=0.000000194 tm2=0.000001407 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000554543 tm2=0.000029692 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000418 tm2=0.000002149 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001583 tm2=0.000002474 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000497 tm2=0.000000951 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000000447 tm2=0.000002553 func=MPI_Type_free datatype=32158064 
+tm1=0.000000077 tm2=0.000000940 func=MPI_Type_free datatype=32142320 
+tm1=0.000003597 tm2=0.000004075 func=MPI_Type_contiguous count=16 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000367 tm2=0.000000965 func=MPI_Type_contiguous count=16 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000242 tm2=0.000001466 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000073 tm2=0.000000168 func=MPI_Type_commit datatype=32158064 
+tm1=0.000003104 tm2=0.000297199 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000294 tm2=0.000002301 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000668 tm2=0.000106765 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_count.c-c.individual.2.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000000663 tm2=0.000000439 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000000413 tm2=0.000048100 func=MPI_File_set_size fh=32151600 size=64 
+tm1=0.000000480 tm2=0.000008629 func=MPI_File_set_view fh=32151600 disp=16 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000121 tm2=0.000000359 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000168 tm2=0.000252697 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000755 tm2=0.000006170 func=MPI_File_read fh=32151600 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000000908 tm2=0.000001956 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000230 tm2=0.000012681 func=MPI_File_close fh=32151600 
+tm1=0.000000217 tm2=0.000001903 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000754671 tm2=0.000067781 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000606 tm2=0.000004281 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001569 tm2=0.000004244 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001238 tm2=0.000004814 func=MPI_Type_free datatype=32143952 
+tm1=0.000000152 tm2=0.000001286 func=MPI_Type_free datatype=32158064 
+tm1=0.000003611 tm2=0.000005129 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000275 tm2=0.000001376 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000247 tm2=0.000001884 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000166 tm2=0.000000351 func=MPI_Type_commit datatype=32143952 
+tm1=0.000005584 tm2=0.000255673 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000849 tm2=0.000114622 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001275 tm2=0.000145288 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_count.c-c.individual.4.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000000532 tm2=0.000000827 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000000839 tm2=0.000112975 func=MPI_File_set_size fh=32151600 size=128 
+tm1=0.000000945 tm2=0.000017421 func=MPI_File_set_view fh=32151600 disp=32 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000316 tm2=0.000000731 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000392 tm2=0.000005560 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001060 tm2=0.000006634 func=MPI_File_read fh=32151600 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000002586 tm2=0.000006838 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000804 tm2=0.000026915 func=MPI_File_close fh=32151600 
+tm1=0.000000479 tm2=0.000009536 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000757142 tm2=0.000433404 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000001958 tm2=0.000017474 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002735 tm2=0.000007685 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000002715 tm2=0.000007399 func=MPI_Type_free datatype=32142320 
+tm1=0.000000296 tm2=0.000001358 func=MPI_Type_free datatype=32143952 
+tm1=0.000006583 tm2=0.000008056 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000486 tm2=0.000002209 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000531 tm2=0.000002961 func=MPI_Type_commit datatype=32158064 
+tm1=0.000000280 tm2=0.000000601 func=MPI_Type_commit datatype=32142320 
+tm1=0.000008401 tm2=0.000522819 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001187 tm2=0.000007304 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001909 tm2=0.000258049 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_count.c-c.individual.8.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000001077 tm2=0.000001673 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000001217 tm2=0.000069622 func=MPI_File_set_size fh=32151600 size=256 
+tm1=0.000001268 tm2=0.000029658 func=MPI_File_set_view fh=32151600 disp=64 etype=MPI_CHAR filetype=32142320 datarep=native info=32095024 
+tm1=0.000000471 tm2=0.000001132 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000571 tm2=0.000211211 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002375 tm2=0.000018626 func=MPI_File_read fh=32151600 buf=buf count=1 datatype=32158064 status=140736225634736 
+tm1=0.000002686 tm2=0.000011026 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000842 tm2=0.000043596 func=MPI_File_close fh=32151600 
+tm1=0.000000911 tm2=0.000072939 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000731778 tm2=0.000142894 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000479 tm2=0.000050173 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001029 tm2=0.000079045 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001259 tm2=0.000003122 func=MPI_Type_free datatype=32158064 
+tm1=0.000000061 tm2=0.000000990 func=MPI_Type_free datatype=32142320 
+tm1=0.000051008 tm2=0.000002995 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000310 tm2=0.000002887 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000258 tm2=0.000001151 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000068 tm2=0.000000179 func=MPI_Type_commit datatype=32158064 
+tm1=0.000002300 tm2=0.000233356 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000313 tm2=0.000001662 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000682 tm2=0.000086281 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_count.c-c.individual.16.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000000323 tm2=0.000000711 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000000490 tm2=0.000021767 func=MPI_File_set_size fh=32151600 size=512 
+tm1=0.000000484 tm2=0.000008223 func=MPI_File_set_view fh=32151600 disp=128 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000293 tm2=0.000001090 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000125 tm2=0.000336278 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000748 tm2=0.000012850 func=MPI_File_read fh=32151600 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000001221 tm2=0.000003470 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000326 tm2=0.000013265 func=MPI_File_close fh=32151600 
+tm1=0.000000140 tm2=0.000002463 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.004148694 tm2=0.000083183 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000001840 tm2=0.000045882 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001940 tm2=0.000011394 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001152 tm2=0.000001686 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000002046 tm2=0.000002965 func=MPI_Type_free datatype=32143952 
+tm1=0.000000207 tm2=0.000001221 func=MPI_Type_free datatype=32158064 
+tm1=0.000002508 tm2=0.000005438 func=MPI_Type_contiguous count=8 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000310 tm2=0.000002026 func=MPI_Type_contiguous count=8 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000407 tm2=0.000002080 func=MPI_Type_commit datatype=32142320 
+tm1=0.000000157 tm2=0.000000398 func=MPI_Type_commit datatype=32143952 
+tm1=0.000006200 tm2=0.000942925 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000908 tm2=0.000004674 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001532 tm2=0.000471190 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_count.c-c.collective.1.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000001065 tm2=0.000002661 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000000988 tm2=0.000050902 func=MPI_File_set_size fh=32151600 size=32 
+tm1=0.000001028 tm2=0.000070590 func=MPI_File_set_view fh=32151600 disp=8 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000498 tm2=0.000001138 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000427 tm2=0.000002835 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000008163 tm2=0.000526146 func=MPI_File_read_all fh=32151600 buf=buf count=1 datatype=32142320 status=140736225634736 
+tm1=0.000002951 tm2=0.000009294 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000728 tm2=0.000041561 func=MPI_File_close fh=32151600 
+tm1=0.000000611 tm2=0.000003042 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000925644 tm2=0.000055122 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000001032 tm2=0.000005732 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000006749 tm2=0.000005684 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001221 tm2=0.000001951 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000000701 tm2=0.000003628 func=MPI_Type_free datatype=32142320 
+tm1=0.000000269 tm2=0.000001378 func=MPI_Type_free datatype=32143952 
+tm1=0.000003224 tm2=0.000003657 func=MPI_Type_contiguous count=16 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000413 tm2=0.000001377 func=MPI_Type_contiguous count=16 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000268 tm2=0.000001918 func=MPI_Type_commit datatype=32158064 
+tm1=0.000000264 tm2=0.000000621 func=MPI_Type_commit datatype=32142320 
+tm1=0.000006069 tm2=0.000322208 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000974 tm2=0.000005275 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001042 tm2=0.000233067 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_count.c-c.collective.2.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000000621 tm2=0.000003373 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000000945 tm2=0.000053775 func=MPI_File_set_size fh=32151600 size=64 
+tm1=0.000001014 tm2=0.000084589 func=MPI_File_set_view fh=32151600 disp=16 etype=MPI_CHAR filetype=32142320 datarep=native info=32095024 
+tm1=0.000000630 tm2=0.000001025 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000477 tm2=0.000003100 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001101 tm2=0.000100075 func=MPI_File_read_all fh=32151600 buf=buf count=1 datatype=32158064 status=140736225634736 
+tm1=0.000002407 tm2=0.000014260 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000781 tm2=0.000042452 func=MPI_File_close fh=32151600 
+tm1=0.000000618 tm2=0.000004862 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000794346 tm2=0.000036968 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000994 tm2=0.000013507 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001802 tm2=0.000004385 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000813 tm2=0.000001407 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000000844 tm2=0.000003589 func=MPI_Type_free datatype=32158064 
+tm1=0.000000163 tm2=0.000001415 func=MPI_Type_free datatype=32142320 
+tm1=0.000002797 tm2=0.000004685 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000268 tm2=0.000001542 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000280 tm2=0.000001885 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000148 tm2=0.000000363 func=MPI_Type_commit datatype=32158640 
+tm1=0.000005367 tm2=0.000157973 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000534 tm2=0.000001870 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001049 tm2=0.000311507 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_count.c-c.collective.4.r0 amode=9 info=32095024 fh=32151600 
+tm1=0.000000844 tm2=0.000002133 func=MPI_File_set_atomicity fh=32151600 flag=0 
+tm1=0.000000761 tm2=0.000043639 func=MPI_File_set_size fh=32151600 size=128 
+tm1=0.000000733 tm2=0.000024017 func=MPI_File_set_view fh=32151600 disp=32 etype=MPI_CHAR filetype=32158640 datarep=native info=32095024 
+tm1=0.000000273 tm2=0.000000683 func=MPI_File_seek fh=32151600 offset=0 whence=600 
+tm1=0.000000361 tm2=0.000002666 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000827 tm2=0.000070733 func=MPI_File_read_all fh=32151600 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000002096 tm2=0.000009105 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000544 tm2=0.000025466 func=MPI_File_close fh=32151600 
+tm1=0.000000438 tm2=0.000007357 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000546753 tm2=0.000030544 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000607 tm2=0.000003112 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001571 tm2=0.000005615 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001168 tm2=0.000008797 func=MPI_Type_free datatype=32143952 
+tm1=0.000000120 tm2=0.000000982 func=MPI_Type_free datatype=32158640 
+tm1=0.000003738 tm2=0.000004453 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000242 tm2=0.000001290 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000226 tm2=0.000001421 func=MPI_Type_commit datatype=32158064 
+tm1=0.000000112 tm2=0.000000518 func=MPI_Type_commit datatype=32155616 
+tm1=0.000003948 tm2=0.000114369 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000473 tm2=0.000093662 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001011 tm2=0.000313959 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_count.c-c.collective.8.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000626 tm2=0.000001941 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000755 tm2=0.000034444 func=MPI_File_set_size fh=32143008 size=256 
+tm1=0.000000708 tm2=0.000017468 func=MPI_File_set_view fh=32143008 disp=64 etype=MPI_CHAR filetype=32155616 datarep=native info=32095024 
+tm1=0.000000190 tm2=0.000000748 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000251 tm2=0.000002269 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000864 tm2=0.000052414 func=MPI_File_read_all fh=32143008 buf=buf count=1 datatype=32158064 status=140736225634736 
+tm1=0.000001507 tm2=0.000006311 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000654 tm2=0.000021968 func=MPI_File_close fh=32143008 
+tm1=0.000000332 tm2=0.000001878 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.001048197 tm2=0.000252034 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000001135 tm2=0.000021990 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002483 tm2=0.000061304 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000002511 tm2=0.000005036 func=MPI_Type_free datatype=32158064 
+tm1=0.000000156 tm2=0.000001331 func=MPI_Type_free datatype=32155616 
+tm1=0.000004515 tm2=0.000005851 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000320 tm2=0.000001207 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000287 tm2=0.000001944 func=MPI_Type_commit datatype=32158640 
+tm1=0.000000160 tm2=0.000000375 func=MPI_Type_commit datatype=32158064 
+tm1=0.000005383 tm2=0.000462639 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000608 tm2=0.000004718 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000918 tm2=0.000186088 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_count.c-c.collective.16.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000700 tm2=0.000002160 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000858 tm2=0.002102082 func=MPI_File_set_size fh=32143008 size=512 
+tm1=0.000001578 tm2=0.000072269 func=MPI_File_set_view fh=32143008 disp=128 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000396 tm2=0.000001342 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000689 tm2=0.000008831 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001098 tm2=0.000144637 func=MPI_File_read_all fh=32143008 buf=buf count=1 datatype=32158640 status=140736225634736 
+tm1=0.000002837 tm2=0.000009727 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000638 tm2=0.000083221 func=MPI_File_close fh=32143008 
+tm1=0.000000786 tm2=0.000004842 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000600220 tm2=0.000027272 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000312 tm2=0.000002115 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001011 tm2=0.000329612 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000571 tm2=0.000000878 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000000841 tm2=0.000012152 func=MPI_Type_free datatype=32158640 
+tm1=0.000000131 tm2=0.000000433 func=MPI_Type_free datatype=32158064 
+tm1=0.000001273 tm2=0.000001907 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000065 tm2=0.000000663 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000053 tm2=0.000000718 func=MPI_Type_commit datatype=32155616 
+tm1=0.000000055 tm2=0.000000231 func=MPI_Type_commit datatype=32158064 
+tm1=0.000001623 tm2=0.000768537 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000260 tm2=0.000002900 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000659 tm2=0.000077535 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_size.c-c.individual.8.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000320 tm2=0.000000430 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000362 tm2=0.000073934 func=MPI_File_set_size fh=32143008 size=128 
+tm1=0.000000517 tm2=0.000009428 func=MPI_File_set_view fh=32143008 disp=32 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000110 tm2=0.000000527 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000118 tm2=0.000061891 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000515 tm2=0.000005936 func=MPI_File_read fh=32143008 buf=buf count=1 datatype=32155616 status=140736225634736 
+tm1=0.000000480 tm2=0.000001169 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000362 tm2=0.000010423 func=MPI_File_close fh=32143008 
+tm1=0.000010103 tm2=0.000021010 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000526704 tm2=0.000034971 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000558 tm2=0.000004369 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001498 tm2=0.000003994 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001310 tm2=0.000004178 func=MPI_Type_free datatype=32155616 
+tm1=0.000000138 tm2=0.000000801 func=MPI_Type_free datatype=32158064 
+tm1=0.000002925 tm2=0.000004711 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000186 tm2=0.000000570 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000152 tm2=0.000001390 func=MPI_Type_commit datatype=32155616 
+tm1=0.000000125 tm2=0.000000266 func=MPI_Type_commit datatype=32158064 
+tm1=0.000004117 tm2=0.000698278 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000500 tm2=0.000004624 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000875 tm2=0.000141588 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_size.c-c.individual.16.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000640 tm2=0.000000798 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000721 tm2=0.000027542 func=MPI_File_set_size fh=32143008 size=256 
+tm1=0.000000858 tm2=0.000011933 func=MPI_File_set_view fh=32143008 disp=64 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000210 tm2=0.000000703 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000263 tm2=0.000058693 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000709 tm2=0.000008930 func=MPI_File_read fh=32143008 buf=buf count=1 datatype=32155616 status=140736225634736 
+tm1=0.000001209 tm2=0.000004546 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000495 tm2=0.000013763 func=MPI_File_close fh=32143008 
+tm1=0.000000346 tm2=0.000011472 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000188361 tm2=0.000471094 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000708 tm2=0.000003142 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001296 tm2=0.000004283 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001180 tm2=0.000002307 func=MPI_Type_free datatype=32155616 
+tm1=0.000000094 tm2=0.000000786 func=MPI_Type_free datatype=32158064 
+tm1=0.000001479 tm2=0.000002720 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000298 tm2=0.000001028 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000104 tm2=0.000000948 func=MPI_Type_commit datatype=32155616 
+tm1=0.000000078 tm2=0.000000270 func=MPI_Type_commit datatype=32158064 
+tm1=0.000002385 tm2=0.000479254 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000395 tm2=0.000002205 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000445 tm2=0.000068040 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_size.c-c.individual.32.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000356 tm2=0.000000718 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000543 tm2=0.000017541 func=MPI_File_set_size fh=32143008 size=512 
+tm1=0.000000313 tm2=0.000006205 func=MPI_File_set_view fh=32143008 disp=128 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000074 tm2=0.000000375 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000104 tm2=0.000030603 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000418 tm2=0.000004088 func=MPI_File_read fh=32143008 buf=buf count=1 datatype=32155616 status=140736225634736 
+tm1=0.000000792 tm2=0.000001675 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000301 tm2=0.000006689 func=MPI_File_close fh=32143008 
+tm1=0.000000127 tm2=0.000004217 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000296492 tm2=0.000021861 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000305 tm2=0.000001620 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001002 tm2=0.000001719 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001033 tm2=0.000001643 func=MPI_Type_free datatype=32155616 
+tm1=0.000000049 tm2=0.000001161 func=MPI_Type_free datatype=32158064 
+tm1=0.000001070 tm2=0.000002130 func=MPI_Type_contiguous count=256 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000075 tm2=0.000000254 func=MPI_Type_contiguous count=256 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000056 tm2=0.000000785 func=MPI_Type_commit datatype=32155616 
+tm1=0.000000051 tm2=0.000000110 func=MPI_Type_commit datatype=32158064 
+tm1=0.000001832 tm2=0.000197174 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000046 tm2=0.000002278 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000325 tm2=0.000059637 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_size.c-c.individual.64.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000115 tm2=0.000000531 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000347 tm2=0.000013821 func=MPI_File_set_size fh=32143008 size=1024 
+tm1=0.000000358 tm2=0.000004952 func=MPI_File_set_view fh=32143008 disp=256 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000076 tm2=0.000000383 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000077 tm2=0.000022532 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000318 tm2=0.000002425 func=MPI_File_read fh=32143008 buf=buf count=1 datatype=32155616 status=140736225634736 
+tm1=0.000000673 tm2=0.000000472 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000256 tm2=0.000006354 func=MPI_File_close fh=32143008 
+tm1=0.000000136 tm2=0.000000820 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.001136576 tm2=0.000027604 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000465 tm2=0.000002964 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001382 tm2=0.000002901 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001817 tm2=0.000002705 func=MPI_Type_free datatype=32155616 
+tm1=0.000000134 tm2=0.000000864 func=MPI_Type_free datatype=32158064 
+tm1=0.000002434 tm2=0.000003634 func=MPI_Type_contiguous count=512 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000208 tm2=0.000000689 func=MPI_Type_contiguous count=512 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000160 tm2=0.000001256 func=MPI_Type_commit datatype=32155616 
+tm1=0.000000128 tm2=0.000000301 func=MPI_Type_commit datatype=32158064 
+tm1=0.000003847 tm2=0.000509534 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000484 tm2=0.000002201 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000792 tm2=0.000098225 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_size.c-c.individual.128.r0 amode=9 info=32095024 fh=32126528 
+tm1=0.000000653 tm2=0.000000732 func=MPI_File_set_atomicity fh=32126528 flag=0 
+tm1=0.000000527 tm2=0.000052375 func=MPI_File_set_size fh=32126528 size=2048 
+tm1=0.000000649 tm2=0.000012877 func=MPI_File_set_view fh=32126528 disp=512 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000176 tm2=0.000000478 func=MPI_File_seek fh=32126528 offset=0 whence=600 
+tm1=0.000000252 tm2=0.000005273 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000671 tm2=0.000005876 func=MPI_File_read fh=32126528 buf=buf count=1 datatype=32155616 status=140736225634736 
+tm1=0.000001106 tm2=0.000001443 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000352 tm2=0.000017061 func=MPI_File_close fh=32126528 
+tm1=0.000000436 tm2=0.000001554 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000193206 tm2=0.000594167 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000516 tm2=0.000003402 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002506 tm2=0.000002526 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000592 tm2=0.000001409 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000001973 tm2=0.000003465 func=MPI_Type_free datatype=32155616 
+tm1=0.000000120 tm2=0.000000728 func=MPI_Type_free datatype=32158064 
+tm1=0.000002210 tm2=0.000002578 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000169 tm2=0.000001614 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000152 tm2=0.000001235 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000114 tm2=0.000000251 func=MPI_Type_commit datatype=32155616 
+tm1=0.000003221 tm2=0.000244403 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000322 tm2=0.000005164 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000528 tm2=0.000110873 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_size.c-c.collective.8.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000493 tm2=0.000001460 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000356 tm2=0.000042867 func=MPI_File_set_size fh=32143008 size=128 
+tm1=0.000000399 tm2=0.000012392 func=MPI_File_set_view fh=32143008 disp=32 etype=MPI_CHAR filetype=32155616 datarep=native info=32095024 
+tm1=0.000000177 tm2=0.000000392 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000203 tm2=0.000019011 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000620 tm2=0.000043177 func=MPI_File_read_all fh=32143008 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000001051 tm2=0.000004705 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000403 tm2=0.000016019 func=MPI_File_close fh=32143008 
+tm1=0.000000316 tm2=0.000001787 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.001033641 tm2=0.000028674 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000617 tm2=0.000010831 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000004901 tm2=0.000137801 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001551 tm2=0.000001427 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000000987 tm2=0.000003331 func=MPI_Type_free datatype=32143952 
+tm1=0.000000156 tm2=0.000001130 func=MPI_Type_free datatype=32155616 
+tm1=0.000002760 tm2=0.000002618 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000202 tm2=0.000001132 func=MPI_Type_contiguous count=64 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000146 tm2=0.000001386 func=MPI_Type_commit datatype=32158064 
+tm1=0.000000122 tm2=0.000000256 func=MPI_Type_commit datatype=32143952 
+tm1=0.000004014 tm2=0.000320298 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000459 tm2=0.000012900 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000758 tm2=0.001171849 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_size.c-c.collective.16.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000643 tm2=0.000001925 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000657 tm2=0.000068178 func=MPI_File_set_size fh=32143008 size=256 
+tm1=0.000000939 tm2=0.000043924 func=MPI_File_set_view fh=32143008 disp=64 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000375 tm2=0.000000667 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000303 tm2=0.000002036 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000742 tm2=0.000113677 func=MPI_File_read_all fh=32143008 buf=buf count=1 datatype=32158064 status=140736225634736 
+tm1=0.000002008 tm2=0.000007371 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000581 tm2=0.000053517 func=MPI_File_close fh=32143008 
+tm1=0.000000774 tm2=0.000005290 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.001086568 tm2=0.000119142 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000001062 tm2=0.000047449 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000003634 tm2=0.000004717 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000704 tm2=0.000001337 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000000758 tm2=0.000003015 func=MPI_Type_free datatype=32158064 
+tm1=0.000000127 tm2=0.000000873 func=MPI_Type_free datatype=32143952 
+tm1=0.000002347 tm2=0.000003727 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000216 tm2=0.000000845 func=MPI_Type_contiguous count=128 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000196 tm2=0.000001319 func=MPI_Type_commit datatype=32155616 
+tm1=0.000000132 tm2=0.000000334 func=MPI_Type_commit datatype=32158064 
+tm1=0.000004101 tm2=0.000295774 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000475 tm2=0.000002112 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000834 tm2=0.000155420 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_size.c-c.collective.32.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000511 tm2=0.000001615 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000560 tm2=0.000032255 func=MPI_File_set_size fh=32143008 size=512 
+tm1=0.000000614 tm2=0.000017580 func=MPI_File_set_view fh=32143008 disp=128 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000190 tm2=0.000000749 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000280 tm2=0.000056792 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000852 tm2=0.000102741 func=MPI_File_read_all fh=32143008 buf=buf count=1 datatype=32155616 status=140736225634736 
+tm1=0.000001935 tm2=0.000057206 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000980 tm2=0.000049951 func=MPI_File_close fh=32143008 
+tm1=0.000000770 tm2=0.000025605 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000455962 tm2=0.000045206 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000333 tm2=0.000039397 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002199 tm2=0.000001646 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001042 tm2=0.000001989 func=MPI_Type_free datatype=32155616 
+tm1=0.000000059 tm2=0.000000632 func=MPI_Type_free datatype=32158064 
+tm1=0.000001602 tm2=0.000001484 func=MPI_Type_contiguous count=256 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000118 tm2=0.000001298 func=MPI_Type_contiguous count=256 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000095 tm2=0.000000856 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000061 tm2=0.000000179 func=MPI_Type_commit datatype=32155616 
+tm1=0.000001982 tm2=0.000229754 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000235 tm2=0.000002812 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000451 tm2=0.000141602 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_size.c-c.collective.64.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000239 tm2=0.000000865 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000316 tm2=0.000023522 func=MPI_File_set_size fh=32143008 size=1024 
+tm1=0.000000298 tm2=0.000009074 func=MPI_File_set_view fh=32143008 disp=256 etype=MPI_CHAR filetype=32155616 datarep=native info=32095024 
+tm1=0.000000105 tm2=0.000000346 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000137 tm2=0.000000862 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000348 tm2=0.000029457 func=MPI_File_read_all fh=32143008 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000000523 tm2=0.000003270 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000256 tm2=0.000011045 func=MPI_File_close fh=32143008 
+tm1=0.000000162 tm2=0.000000922 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000517998 tm2=0.000028349 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000360 tm2=0.000002313 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000928 tm2=0.000004002 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001516 tm2=0.000003163 func=MPI_Type_free datatype=32143952 
+tm1=0.000000132 tm2=0.000000978 func=MPI_Type_free datatype=32155616 
+tm1=0.000001610 tm2=0.000002215 func=MPI_Type_contiguous count=512 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000102 tm2=0.000000944 func=MPI_Type_contiguous count=512 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000081 tm2=0.000000904 func=MPI_Type_commit datatype=32158064 
+tm1=0.000000077 tm2=0.000000158 func=MPI_Type_commit datatype=32143952 
+tm1=0.000002267 tm2=0.000410402 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000320 tm2=0.000004052 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000730 tm2=0.000106632 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_size.c-c.collective.128.r0 amode=9 info=32095024 fh=32153760 
+tm1=0.000000253 tm2=0.000002689 func=MPI_File_set_atomicity fh=32153760 flag=0 
+tm1=0.000000495 tm2=0.000028956 func=MPI_File_set_size fh=32153760 size=2048 
+tm1=0.000000349 tm2=0.000013007 func=MPI_File_set_view fh=32153760 disp=512 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000160 tm2=0.000000657 func=MPI_File_seek fh=32153760 offset=0 whence=600 
+tm1=0.000000133 tm2=0.000002354 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000734 tm2=0.000113094 func=MPI_File_read_all fh=32153760 buf=buf count=1 datatype=32158064 status=140736225634736 
+tm1=0.000001148 tm2=0.000002649 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000270 tm2=0.000019119 func=MPI_File_close fh=32153760 
+tm1=0.000000267 tm2=0.000012608 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000446675 tm2=0.000022379 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000234 tm2=0.000001985 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002206 tm2=0.000001326 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001084 tm2=0.000005385 func=MPI_Type_free datatype=32158064 
+tm1=0.000000054 tm2=0.000000428 func=MPI_Type_free datatype=32143952 
+tm1=0.000002089 tm2=0.000002051 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000072 tm2=0.000000746 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000056 tm2=0.000001034 func=MPI_Type_commit datatype=32155616 
+tm1=0.000000050 tm2=0.000000108 func=MPI_Type_commit datatype=32158064 
+tm1=0.000002170 tm2=0.000928150 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000218 tm2=0.000205210 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000490 tm2=0.000060363 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_spacing.c-c.individual.1.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000184 tm2=0.000000232 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000263 tm2=0.000035859 func=MPI_File_set_size fh=32143008 size=128 
+tm1=0.000000236 tm2=0.000004978 func=MPI_File_set_view fh=32143008 disp=32 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000082 tm2=0.000000264 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000080 tm2=0.000012228 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000445 tm2=0.000004740 func=MPI_File_read fh=32143008 buf=buf count=1 datatype=32155616 status=140736225634736 
+tm1=0.000000597 tm2=0.000001088 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000152 tm2=0.000005895 func=MPI_File_close fh=32143008 
+tm1=0.000000116 tm2=0.000001064 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000596090 tm2=0.000024953 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000260 tm2=0.000001815 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001202 tm2=0.000002001 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000642 tm2=0.000002485 func=MPI_Type_free datatype=32155616 
+tm1=0.000000046 tm2=0.000000711 func=MPI_Type_free datatype=32158064 
+tm1=0.000002026 tm2=0.000002868 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000092 tm2=0.000000356 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000058 tm2=0.000000659 func=MPI_Type_commit datatype=32155616 
+tm1=0.000000055 tm2=0.000000098 func=MPI_Type_commit datatype=32158064 
+tm1=0.000001555 tm2=0.000116528 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000039 tm2=0.000007710 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000311 tm2=0.000058874 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_spacing.c-c.individual.2.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000103 tm2=0.000000506 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000494 tm2=0.000015450 func=MPI_File_set_size fh=32143008 size=128 
+tm1=0.000000484 tm2=0.000004179 func=MPI_File_set_view fh=32143008 disp=32 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000085 tm2=0.000000424 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000107 tm2=0.000029502 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000243 tm2=0.000002358 func=MPI_File_read fh=32143008 buf=buf count=1 datatype=32155616 status=140736225634736 
+tm1=0.000000605 tm2=0.000001444 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000238 tm2=0.000006029 func=MPI_File_close fh=32143008 
+tm1=0.000000126 tm2=0.000015719 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000400962 tm2=0.000024629 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000334 tm2=0.000001759 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000902 tm2=0.000001693 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000670 tm2=0.000002566 func=MPI_Type_free datatype=32155616 
+tm1=0.000000068 tm2=0.000000767 func=MPI_Type_free datatype=32158064 
+tm1=0.000001468 tm2=0.000002823 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000108 tm2=0.000000468 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000100 tm2=0.000000895 func=MPI_Type_commit datatype=32155616 
+tm1=0.000000070 tm2=0.000000187 func=MPI_Type_commit datatype=32158064 
+tm1=0.000002024 tm2=0.000217643 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000224 tm2=0.000001097 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000428 tm2=0.000062239 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_spacing.c-c.individual.4.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000219 tm2=0.000000329 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000400 tm2=0.000041281 func=MPI_File_set_size fh=32143008 size=128 
+tm1=0.000000337 tm2=0.000007805 func=MPI_File_set_view fh=32143008 disp=32 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000109 tm2=0.000000299 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000120 tm2=0.000002836 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000265 tm2=0.000002830 func=MPI_File_read fh=32143008 buf=buf count=1 datatype=32155616 status=140736225634736 
+tm1=0.000000789 tm2=0.000000961 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000145 tm2=0.000008225 func=MPI_File_close fh=32143008 
+tm1=0.000000169 tm2=0.000000891 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000482836 tm2=0.000025433 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000299 tm2=0.000001943 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000803 tm2=0.000001587 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000535 tm2=0.000000827 func=MPI_Send buf=buf count=6 datatype=MPI_DOUBLE dest=0 tag=0 comm=MPI_COMM_WORLD 
+tm1=0.000000325 tm2=0.000002302 func=MPI_Type_free datatype=32155616 
+tm1=0.000000065 tm2=0.000000842 func=MPI_Type_free datatype=32158064 
+tm1=0.000000971 tm2=0.000002379 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000105 tm2=0.000000389 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000250 tm2=0.000001069 func=MPI_Type_commit datatype=32155616 
+tm1=0.000000069 tm2=0.000000194 func=MPI_Type_commit datatype=32158064 
+tm1=0.000002081 tm2=0.000107549 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000097 tm2=0.000001437 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000384 tm2=0.000062313 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_spacing.c-c.individual.8.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000225 tm2=0.000000355 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000259 tm2=0.000039353 func=MPI_File_set_size fh=32143008 size=128 
+tm1=0.000000342 tm2=0.000007607 func=MPI_File_set_view fh=32143008 disp=32 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000108 tm2=0.000000290 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000134 tm2=0.000003002 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000384 tm2=0.000003069 func=MPI_File_read fh=32143008 buf=buf count=1 datatype=32155616 status=140736225634736 
+tm1=0.000000551 tm2=0.000000892 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000149 tm2=0.000008557 func=MPI_File_close fh=32143008 
+tm1=0.000000173 tm2=0.000007001 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000782504 tm2=0.002018172 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000713 tm2=0.000026380 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001079 tm2=0.000021703 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000760 tm2=0.000002502 func=MPI_Type_free datatype=32155616 
+tm1=0.000000054 tm2=0.000000675 func=MPI_Type_free datatype=32158064 
+tm1=0.000002109 tm2=0.000003320 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000075 tm2=0.000000228 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000110 tm2=0.000001228 func=MPI_Type_commit datatype=32155616 
+tm1=0.000000046 tm2=0.000000099 func=MPI_Type_commit datatype=32158064 
+tm1=0.000001812 tm2=0.000190927 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000068 tm2=0.000005489 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000282 tm2=0.000059989 func=MPI_File_open comm=MPI_COMM_SELF filename=t.vector.region_spacing.c-c.individual.16.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000144 tm2=0.000000508 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000372 tm2=0.000022545 func=MPI_File_set_size fh=32143008 size=128 
+tm1=0.000000245 tm2=0.000004151 func=MPI_File_set_view fh=32143008 disp=32 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000074 tm2=0.000000240 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000102 tm2=0.000021141 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000279 tm2=0.000004079 func=MPI_File_read fh=32143008 buf=buf count=1 datatype=32155616 status=140736225634736 
+tm1=0.000000613 tm2=0.000000878 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000244 tm2=0.000005924 func=MPI_File_close fh=32143008 
+tm1=0.000000117 tm2=0.000003513 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.001371685 tm2=0.001031244 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000523 tm2=0.000003710 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001180 tm2=0.000003490 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000810 tm2=0.000003103 func=MPI_Type_free datatype=32155616 
+tm1=0.000000073 tm2=0.000000625 func=MPI_Type_free datatype=32158064 
+tm1=0.000010991 tm2=0.000003744 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000098 tm2=0.000000459 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000096 tm2=0.000001187 func=MPI_Type_commit datatype=32155616 
+tm1=0.000000065 tm2=0.000000181 func=MPI_Type_commit datatype=32158064 
+tm1=0.000002651 tm2=0.001562935 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000266 tm2=0.000002393 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000681 tm2=0.000077933 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_spacing.c-c.collective.1.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000362 tm2=0.000000840 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000391 tm2=0.000016462 func=MPI_File_set_size fh=32143008 size=128 
+tm1=0.000000277 tm2=0.000008127 func=MPI_File_set_view fh=32143008 disp=32 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000113 tm2=0.000000275 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000097 tm2=0.000000812 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000300 tm2=0.000023299 func=MPI_File_read_all fh=32143008 buf=buf count=1 datatype=32155616 status=140736225634736 
+tm1=0.000000593 tm2=0.000001450 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000212 tm2=0.000010424 func=MPI_File_close fh=32143008 
+tm1=0.000000192 tm2=0.000008857 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.001413868 tm2=0.000573547 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000556 tm2=0.000013937 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002553 tm2=0.000087876 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001379 tm2=0.000002612 func=MPI_Type_free datatype=32155616 
+tm1=0.000000073 tm2=0.000000712 func=MPI_Type_free datatype=32158064 
+tm1=0.000002704 tm2=0.000027791 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000237 tm2=0.000001097 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000273 tm2=0.000001453 func=MPI_Type_commit datatype=32143952 
+tm1=0.000000079 tm2=0.000000295 func=MPI_Type_commit datatype=32155616 
+tm1=0.000002588 tm2=0.000351467 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000290 tm2=0.000035341 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000680 tm2=0.000239180 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_spacing.c-c.collective.2.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000303 tm2=0.000001240 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000372 tm2=0.000063228 func=MPI_File_set_size fh=32143008 size=128 
+tm1=0.000000391 tm2=0.000011882 func=MPI_File_set_view fh=32143008 disp=32 etype=MPI_CHAR filetype=32155616 datarep=native info=32095024 
+tm1=0.000000127 tm2=0.000000352 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000210 tm2=0.000001316 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000417 tm2=0.000047382 func=MPI_File_read_all fh=32143008 buf=buf count=1 datatype=32143952 status=140736225634736 
+tm1=0.000001221 tm2=0.000013410 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000519 tm2=0.000016101 func=MPI_File_close fh=32143008 
+tm1=0.000000275 tm2=0.000001439 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000878086 tm2=0.001523157 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000669 tm2=0.000003259 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000002852 tm2=0.000003809 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000008954 tm2=0.000002986 func=MPI_Type_free datatype=32143952 
+tm1=0.000000062 tm2=0.000000637 func=MPI_Type_free datatype=32155616 
+tm1=0.000002326 tm2=0.000002460 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000094 tm2=0.000000958 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000122 tm2=0.000001173 func=MPI_Type_commit datatype=32158064 
+tm1=0.000000066 tm2=0.000000141 func=MPI_Type_commit datatype=32143952 
+tm1=0.000002323 tm2=0.000287875 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000158 tm2=0.000005612 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000604 tm2=0.000121567 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_spacing.c-c.collective.4.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000358 tm2=0.000001382 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000368 tm2=0.000026646 func=MPI_File_set_size fh=32143008 size=128 
+tm1=0.000000452 tm2=0.000010877 func=MPI_File_set_view fh=32143008 disp=32 etype=MPI_CHAR filetype=32143952 datarep=native info=32095024 
+tm1=0.000000106 tm2=0.000000520 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000131 tm2=0.000002573 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000517 tm2=0.000036835 func=MPI_File_read_all fh=32143008 buf=buf count=1 datatype=32158064 status=140736225634736 
+tm1=0.000000793 tm2=0.000005842 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000286 tm2=0.000011528 func=MPI_File_close fh=32143008 
+tm1=0.000000161 tm2=0.000021268 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.001094657 tm2=0.000962059 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000560 tm2=0.000035964 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001187 tm2=0.000002451 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000929 tm2=0.000003218 func=MPI_Type_free datatype=32158064 
+tm1=0.000000088 tm2=0.000000936 func=MPI_Type_free datatype=32143952 
+tm1=0.000001801 tm2=0.000002941 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000130 tm2=0.000000836 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000112 tm2=0.000000987 func=MPI_Type_commit datatype=32155616 
+tm1=0.000000079 tm2=0.000000195 func=MPI_Type_commit datatype=32158064 
+tm1=0.000002709 tm2=0.000386835 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000287 tm2=0.000031119 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000001005 tm2=0.000117157 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_spacing.c-c.collective.8.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000366 tm2=0.000001371 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000558 tm2=0.000027993 func=MPI_File_set_size fh=32143008 size=128 
+tm1=0.000000429 tm2=0.000013479 func=MPI_File_set_view fh=32143008 disp=32 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000160 tm2=0.000000544 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000192 tm2=0.000001275 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000435 tm2=0.000040941 func=MPI_File_read_all fh=32143008 buf=buf count=1 datatype=32155616 status=140736225634736 
+tm1=0.000001302 tm2=0.000004064 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000484 tm2=0.000015454 func=MPI_File_close fh=32143008 
+tm1=0.000000283 tm2=0.000001537 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.000612255 tm2=0.001538059 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000604 tm2=0.000003652 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000003404 tm2=0.000002895 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000001010 tm2=0.000006440 func=MPI_Type_free datatype=32155616 
+tm1=0.000000095 tm2=0.000000603 func=MPI_Type_free datatype=32158064 
+tm1=0.000002767 tm2=0.000002999 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000128 tm2=0.000000432 func=MPI_Type_contiguous count=32 oldtype=MPI_CHAR newtype=140483362494432 
+tm1=0.000000163 tm2=0.000001280 func=MPI_Type_commit datatype=32155616 
+tm1=0.000000091 tm2=0.000000208 func=MPI_Type_commit datatype=32158064 
+tm1=0.000003104 tm2=0.000510613 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000488 tm2=0.000004663 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000757 tm2=0.000526422 func=MPI_File_open comm=MPI_COMM_WORLD filename=t.vector.region_spacing.c-c.collective.16.r0 amode=9 info=32095024 fh=32143008 
+tm1=0.000000478 tm2=0.000001508 func=MPI_File_set_atomicity fh=32143008 flag=0 
+tm1=0.000000683 tm2=0.000034998 func=MPI_File_set_size fh=32143008 size=128 
+tm1=0.000000442 tm2=0.000020375 func=MPI_File_set_view fh=32143008 disp=32 etype=MPI_CHAR filetype=32158064 datarep=native info=32095024 
+tm1=0.000000152 tm2=0.000000430 func=MPI_File_seek fh=32143008 offset=0 whence=600 
+tm1=0.000000218 tm2=0.000004114 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000575 tm2=0.000048459 func=MPI_File_read_all fh=32143008 buf=buf count=1 datatype=32155616 status=140736225634736 
+tm1=0.000001127 tm2=0.000009276 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000393 tm2=0.000016089 func=MPI_File_close fh=32143008 
+tm1=0.000000257 tm2=0.000022334 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=1.001035601 tm2=0.000494649 func=MPI_Allreduce sendbuf=sendbuf recvbuf=recvbuf count=1 datatype=MPI_DOUBLE op=6398912 comm=MPI_COMM_WORLD 
+tm1=0.000000353 tm2=0.000001587 func=MPI_Barrier comm=MPI_COMM_WORLD 
+tm1=0.000000689 tm2=0.000001692 func=MPI_Allgather sendbuf=sendbuf sendcount=1 sendtype=MPI_DOUBLE recvbuf=recvbuf recvcount=1 recvtype=MPI_DOUBLE comm=MPI_COMM_WORLD 
+tm1=0.000000739 tm2=0.000002924 func=MPI_Type_free datatype=32155616 
+tm1=0.000000057 tm2=0.000000703 func=MPI_Type_free datatype=32158064 

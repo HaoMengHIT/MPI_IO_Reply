@@ -401,6 +401,8 @@ void SuffixTree::bfs_push_all_edge_in_q(Node * node, queue<Edge*>& q)
 void SuffixTree::bfs_find_repetition(void)
 {
 	Node *node = &root;
+	queue<int> tmp;
+         printf("Hello world!========================\n");
 	queue<Edge*> q;
 
 	repetitions.resize(test_str.size());
