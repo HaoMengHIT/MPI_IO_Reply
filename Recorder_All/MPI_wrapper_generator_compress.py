@@ -250,7 +250,7 @@ def generate_one_function(para_list, out_file, func_file):
 	body += extra_data
 	body += get_array_size
 	body += get_array_content
-        if func == 'MPI_Type_free':
+        if func == 'MPI_Type_free' or func == 'MPI_Comm_free' :
 	    body += after_call
 	body += '\ttm2 = recorder_wtime();\n'
 	body += '\tret = RECORDER_MPI_CALL(' + para_list[0] + ')' + call_para + ';\n'
@@ -263,7 +263,7 @@ def generate_one_function(para_list, out_file, func_file):
 		body += '\twrite_time_all += mpi_time;\n'
 	else:
 		body += '\tmpi_time_all += mpi_time;\n';
-        if func != 'MPI_Type_free':
+        if func != 'MPI_Type_free' and func != 'MPI_Comm_free':
 	    body += after_call
 
 #	body += '\tif (__recorderfh != NULL)\n'

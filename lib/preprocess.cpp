@@ -47,6 +47,7 @@ int Preprocess::run()
 	while (getline(fin,ReadLine))
 	{
 		lineno++;
+      cout << ReadLine << "-------------------\n";
 		extract_data_from_single_line(ReadLine, lineno);
 	}
 
@@ -109,6 +110,7 @@ bool Preprocess::check_io(string& func_name, string& offset)
 //template<typename T, typename K>
 int Preprocess::extract_data_from_single_line(std::string & line, int pos)
 {
+   cout <<"================" << line << endl;
 	std::string key, value, temp;
 	str_hmap cur_func;
 	str_hmap auxiliary;
@@ -206,6 +208,7 @@ int Preprocess::extract_data_from_single_line(std::string & line, int pos)
 				temp_key = "comm";
 			unsigned int assigned_value = build_match(temp_key, value, free);
 			value = std::to_string(assigned_value);
+         cout << key << "\t"<<value <<endl;
 		}
 		else if (first == true && (key == "offset") && (cur_func["func"].find("read_at") != string::npos || cur_func["func"].find("write_at"))) {
 			bool flag = false;
@@ -249,6 +252,7 @@ int Preprocess::extract_data_from_single_line(std::string & line, int pos)
 
 	all_data.push_back(cur_func);
 	auxiliary_data.push_back(auxiliary);
+         cout << "===========================" <<endl;
 
 	return 0;
 }
