@@ -47,7 +47,7 @@ int Preprocess::run()
 	while (getline(fin,ReadLine))
 	{
 		lineno++;
-      cout << ReadLine << "-------------------\n";
+      //cout << ReadLine << "-------------------\n";
 		extract_data_from_single_line(ReadLine, lineno);
 	}
 
@@ -110,7 +110,7 @@ bool Preprocess::check_io(string& func_name, string& offset)
 //template<typename T, typename K>
 int Preprocess::extract_data_from_single_line(std::string & line, int pos)
 {
-   cout <<"================" << line << endl;
+   //cout <<"================" << line << endl;
 	std::string key, value, temp;
 	str_hmap cur_func;
 	str_hmap auxiliary;
@@ -199,7 +199,8 @@ int Preprocess::extract_data_from_single_line(std::string & line, int pos)
 		// func name should be already inserted to cur_func here?
 		else if (first == true && (key == "comm" || key == "newcomm" || key == "fh" || key == "request" || key == "datatype" || key == "etype" || key == "filetype" || key == "newtype" || key == "oldtype") && value.find("MPI") != 0) {
 			bool free = false;
-			if (cur_func["func"] == "MPI_File_close" || cur_func["func"] == "MPI_Type_free" || cur_func["func"] == "MPI_Wait") 
+		//	if (cur_func["func"] == "MPI_File_close" || cur_func["func"] == "MPI_Type_free" || cur_func["func"] == "MPI_Wait") 
+			if (cur_func["func"] == "MPI_File_close" || cur_func["func"] == "MPI_Wait") 
 				free = true;
 			string temp_key = key;
 			if (temp_key == "etype" || temp_key == "filetype" || temp_key == "oldtype" || temp_key == "newtype")
@@ -208,7 +209,7 @@ int Preprocess::extract_data_from_single_line(std::string & line, int pos)
 				temp_key = "comm";
 			unsigned int assigned_value = build_match(temp_key, value, free);
 			value = std::to_string(assigned_value);
-         cout << key << "\t"<<value <<endl;
+         //cout << key << "\t"<<value <<endl;
 		}
 		else if (first == true && (key == "offset") && (cur_func["func"].find("read_at") != string::npos || cur_func["func"].find("write_at"))) {
 			bool flag = false;
@@ -252,7 +253,7 @@ int Preprocess::extract_data_from_single_line(std::string & line, int pos)
 
 	all_data.push_back(cur_func);
 	auxiliary_data.push_back(auxiliary);
-         cout << "===========================" <<endl;
+   //cout << "===========================" <<endl;
 
 	return 0;
 }
