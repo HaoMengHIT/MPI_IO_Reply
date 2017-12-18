@@ -71,7 +71,7 @@ def generate_one_function(para_list, out_file, func_file):
 	def datatype_code(datatype, pointer=False):
 		if pointer == False:
 			datatype_code = '''PMPI_Type_get_name(%(pointer)s%(data)s, %(data)s_name, &result_len);\n
-		if (result_len == 0) {
+		if (result_len == 0 || strcmp(%(data)s_name,"Dup ") == 0) {
 			sprintf(%(data)s_name, "%%lu", %(pointer)s%(data)s);
 		}
 		'''

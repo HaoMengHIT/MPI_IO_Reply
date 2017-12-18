@@ -75,6 +75,8 @@ int MPI_File_seek_shared(MPI_File fh, MPI_Offset offset, int whence);
 int MPI_File_preallocate(MPI_File fh, MPI_Offset size);
 int MPI_File_set_atomicity(MPI_File fh, int flag);
 int MPI_Type_commit(MPI_Datatype *datatype);
+int MPI_Type_hvector(int count, int blocklength, MPI_Aint stride, MPI_Datatype oldtype, MPI_Datatype *newtype);
+int MPI_Type_hindexed(int count, int array_of_blocklengths[], MPI_Aint array_of_displacements[], MPI_Datatype oldtype, MPI_Datatype *newtype);
 int MPI_Type_vector(int count, int blocklength, int stride, MPI_Datatype oldtype, MPI_Datatype *newtype);
 int MPI_Type_indexed(int count, const int array_of_blocklengths[],const int array_of_displacements[],MPI_Datatype oldtype, MPI_Datatype *newtype);
 int MPI_Type_contiguous(int count, MPI_Datatype oldtype, MPI_Datatype *newtype);

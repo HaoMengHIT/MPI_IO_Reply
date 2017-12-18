@@ -76,6 +76,8 @@ RECORDER_FORWARD_DECL(PMPI_File_preallocate,int,(MPI_File fh, MPI_Offset size));
 RECORDER_FORWARD_DECL(PMPI_File_set_atomicity,int,(MPI_File fh, int flag));
 RECORDER_FORWARD_DECL(PMPI_Type_commit,int,(MPI_Datatype *datatype));
 RECORDER_FORWARD_DECL(PMPI_Type_vector,int,(int count, int blocklength, int stride, MPI_Datatype oldtype, MPI_Datatype *newtype));
+RECORDER_FORWARD_DECL(MPI_Type_hvector,int,(int count, int blocklength, MPI_Aint stride, MPI_Datatype oldtype, MPI_Datatype *newtype));
+RECORDER_FORWARD_DECL(MPI_Type_hindexed,int,(int count, int array_of_blocklengths[], MPI_Aint array_of_displacements[], MPI_Datatype oldtype, MPI_Datatype *newtype));
 RECORDER_FORWARD_DECL(PMPI_Type_indexed,int,(int count, const int array_of_blocklengths[],const int array_of_displacements[],MPI_Datatype oldtype, MPI_Datatype *newtype));
 RECORDER_FORWARD_DECL(PMPI_Type_contiguous,int,(int count, MPI_Datatype oldtype, MPI_Datatype *newtype));
 RECORDER_FORWARD_DECL(PMPI_Type_create_darray,int,(int size, int rank, int ndims, const int array_of_gsizes[], const int array_of_distribs[], const int array_of_dargs[], const int array_of_psizes[], int order, MPI_Datatype oldtype, MPI_Datatype *newtype));
